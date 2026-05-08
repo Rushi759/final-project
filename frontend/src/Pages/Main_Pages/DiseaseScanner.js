@@ -258,9 +258,35 @@ const DiseaseScanner = () => {
                                         <p style={{ opacity: 0.8 }}>{language === 'mr' ? report.action_mr : report.action_en}</p>
                                     </div>
                                     <div style={{ borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '30px' }}>
-                                        <input type="number" value={landSize} onChange={(e) => setLandSize(e.target.value)} style={{ width: '100%', background: '#000', padding: '15px', border: '1px solid #333', color: '#fff', borderRadius: '15px', textAlign: 'center' }} />
-                                        <div style={{ marginTop: '15px', background: 'rgba(43,184,90,0.1)', padding: '20px', borderRadius: '20px', textAlign: 'center' }}>
-                                            <div style={{ fontSize: '2rem', color: 'var(--primary)', fontWeight: 900 }}>{Math.round((unit==='acre'?landSize:landSize/40)*report.dosage)} ml/g</div>
+                                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '15px' }}>
+                                            <label style={{ fontWeight: 700, opacity: 0.8, fontSize: '0.9rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                                <FiActivity style={{ color: 'var(--primary)' }} /> {t.size_lbl}
+                                            </label>
+                                            <div className="unit-toggle-dosage" style={{ display: 'flex', background: 'rgba(255,255,255,0.05)', padding: '4px', borderRadius: '10px' }}>
+                                                <button 
+                                                    onClick={() => setUnit('acre')} 
+                                                    style={{ background: unit === 'acre' ? 'var(--primary)' : 'none', border: 'none', color: '#fff', padding: '5px 12px', borderRadius: '8px', cursor: 'pointer', fontSize: '0.8rem', fontWeight: 700 }}
+                                                >
+                                                    {t.unit_acre}
+                                                </button>
+                                                <button 
+                                                    onClick={() => setUnit('gunta')} 
+                                                    style={{ background: unit === 'gunta' ? 'var(--primary)' : 'none', border: 'none', color: '#fff', padding: '5px 12px', borderRadius: '8px', cursor: 'pointer', fontSize: '0.8rem', fontWeight: 700 }}
+                                                >
+                                                    {t.unit_gunta}
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <input 
+                                            type="number" 
+                                            value={landSize} 
+                                            onChange={(e) => setLandSize(e.target.value)} 
+                                            placeholder="1"
+                                            style={{ width: '100%', background: '#000', padding: '15px', border: '1px solid #333', color: '#fff', borderRadius: '15px', textAlign: 'center', fontSize: '1.2rem', fontWeight: 700 }} 
+                                        />
+                                        <div style={{ marginTop: '15px', background: 'rgba(43,184,90,0.1)', padding: '20px', borderRadius: '20px', textAlign: 'center', border: '1px solid rgba(43,184,90,0.2)' }}>
+                                            <div style={{ fontSize: '0.8rem', opacity: 0.6, marginBottom: '5px', fontWeight: 800 }}>{t.dosage_title.toUpperCase()}</div>
+                                            <div style={{ fontSize: '2.2rem', color: 'var(--primary)', fontWeight: 950 }}>{Math.round((unit==='acre'?landSize:landSize/40)*report.dosage)} ml/g</div>
                                         </div>
                                     </div>
                                 </div>
