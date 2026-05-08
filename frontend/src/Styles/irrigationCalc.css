@@ -1,0 +1,440 @@
+/* Irrigation Precision Hub: Master Design System */
+:root {
+    --hydro-blue: #3b82f6;
+    --hydro-emerald: #10b981;
+    --hydro-heat: #f43f5e;
+    --hydro-gold: #f59e0b;
+    --hydro-glass: rgba(255, 255, 255, 0.03);
+    --hydro-border: rgba(255, 255, 255, 0.1);
+}
+
+/* Master Layout */
+.irrigation-hub-container {
+    min-height: 100vh;
+    padding-bottom: 80px;
+}
+
+/* Thermal Matrix Section */
+.thermal-matrix-control {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--hydro-border);
+    border-radius: 20px;
+    padding: 25px;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.thermal-matrix-control::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at right bottom, rgba(244, 63, 94, 0.1), transparent 150px);
+    pointer-events: none;
+}
+
+.thermal-display-dial {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 15px;
+}
+
+.temperature-readout {
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: 'Outfit', sans-serif;
+    color: var(--hydro-heat);
+    text-shadow: 0 0 15px rgba(244, 63, 94, 0.4);
+    display: flex;
+    align-items: flex-start;
+    line-height: 1;
+}
+
+.celsius-mark {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    margin-left: 2px;
+    opacity: 0.8;
+}
+
+.recalc-indicator {
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: var(--hydro-heat);
+    background: rgba(244, 63, 94, 0.1);
+    padding: 4px 12px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+/* Geology Selection Grid */
+/* Utility Benefits Section */
+.utility-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: left;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.utility-card:hover {
+    background: rgba(255, 255, 255, 0.06);
+    transform: translateY(-5px);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.geology-matrix-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.elite-crop-node {
+    background: var(--hydro-glass);
+    border: 2px solid var(--hydro-border);
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.elite-crop-node:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-2px);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.elite-crop-node.active {
+    background: rgba(16, 185, 129, 0.1);
+    border-color: var(--hydro-emerald);
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.2);
+}
+
+.soil-node-btn {
+    background: var(--hydro-glass);
+    border: 1px solid var(--hydro-border);
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.soil-node-btn:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-2px);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.soil-node-btn.active {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.2) 0%, rgba(16, 185, 129, 0.2) 100%);
+    border-color: var(--hydro-blue);
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.2);
+}
+
+.soil-icon-circle {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.soil-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Strategic Hydro-Audit Briefing */
+.hydro-audit-briefing {
+    background: linear-gradient(165deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.95) 100%);
+    border: 1px solid var(--hydro-border);
+    border-radius: 30px;
+    padding: 40px;
+    margin-top: 60px;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(20px);
+}
+
+.hydro-audit-briefing::after {
+    content: 'HYDRO-AUDIT VERIFIED';
+    position: absolute;
+    top: 20px;
+    right: -20px;
+    font-size: 0.6rem;
+    font-weight: 900;
+    color: var(--hydro-emerald);
+    background: rgba(16, 185, 129, 0.1);
+    padding: 5px 30px;
+    transform: rotate(45deg);
+    letter-spacing: 1px;
+}
+
+.audit-id-badge {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    font-size: 0.6rem;
+    color: rgba(255, 255, 255, 0.3);
+    font-family: 'Monaco', monospace;
+    letter-spacing: 2px;
+}
+
+.audit-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.audit-header h3 {
+    font-size: 1.8rem;
+    font-weight: 900;
+    background: linear-gradient(135deg, #fff 0%, var(--hydro-blue) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+.audit-data-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+.audit-stat-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.audit-stat-label {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.4);
+    display: block;
+    margin-bottom: 8px;
+}
+
+.audit-stat-val {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+.audit-analysis-summary {
+    background: rgba(59, 130, 246, 0.05);
+    border-left: 3px solid var(--hydro-blue);
+    padding: 20px;
+    border-radius: 0 12px 12px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+/* Satellite Sync Pulse */
+@keyframes syncPulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(1.1); }
+}
+
+.sync-dot-active {
+    width: 6px;
+    height: 6px;
+    background: var(--hydro-emerald);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--hydro-emerald);
+    animation: syncPulse 2s infinite;
+}
+
+/* Custom Range Slider */
+.premium-range {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 4px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 2px;
+    outline: none;
+}
+
+.premium-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: var(--hydro-heat);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(244, 63, 94, 0.4);
+    transition: all 0.2s ease;
+}
+
+.premium-range::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+}
+
+/* Decision Support Suite */
+.stress-risk-panel {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+}
+
+.stress-info-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+.stress-info-btn:hover {
+    opacity: 1;
+    color: var(--hydro-heat);
+}
+
+.panel-label {
+    font-size: 0.65rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.4);
+    letter-spacing: 1px;
+}
+
+.runtime-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.time-val {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--hydro-gold);
+    font-family: 'Outfit', sans-serif;
+}
+
+.emitter-toggle {
+    display: flex;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 3px;
+    border-radius: 10px;
+    gap: 2px;
+}
+
+.emitter-toggle button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 0.6rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.emitter-toggle button.active {
+    background: var(--hydro-blue);
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+}
+
+.stress-gauge {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.gauge-track {
+    width: 100%;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.gauge-fill {
+    height: 100%;
+    transition: width 1s ease-out;
+}
+
+.risk-level {
+    font-size: 0.7rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-align: right;
+}
+
+.rainfall-bypass-banner {
+    background: linear-gradient(90deg, rgba(59, 130, 246, 0.15) 0%, transparent 100%);
+    border-left: 4px solid var(--hydro-blue);
+    padding: 20px;
+    border-radius: 0 15px 15px 0;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    animation: slideInLeft 0.5s ease-out;
+}
+
+.bypass-icon {
+    font-size: 2rem;
+    filter: drop-shadow(0 0 10px var(--hydro-blue));
+}
+
+/* Global Modal Fix for Irrigation Hub */
+.hub-modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(15px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    padding: 20px;
+}
+
+.hub-modal-content {
+    background: linear-gradient(165deg, rgba(30, 41, 59, 0.95) 0%, rgba(15, 23, 42, 1) 100%);
+    border: 1px solid var(--hydro-border);
+    border-radius: 30px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    z-index: 10001;
+}
+
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+}

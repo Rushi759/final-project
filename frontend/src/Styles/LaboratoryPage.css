@@ -1,0 +1,229 @@
+#lab_page {
+    padding: 4rem 5%;
+    min-height: 100vh;
+    background-color: var(--bg-secondary);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Hero Section */
+.lab-hero {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    border-radius: var(--radius-xl);
+    padding: 4rem;
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    box-shadow: var(--shadow-lg);
+    position: relative;
+    overflow: hidden;
+}
+
+.lab-hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background: radial-gradient(circle, rgba(5, 150, 105, 0.15) 0%, transparent 70%);
+}
+
+.lab-hero-text h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    letter-spacing: -1px;
+}
+
+.lab-hero-text p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    max-width: 500px;
+}
+
+/* Gallery Section */
+#lab_gallery {
+    width: 100%;
+    background: transparent;
+    padding: 0;
+}
+
+#lab_title {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#lab_title::before {
+    content: '🧪';
+}
+
+/* Laboratory Grid */
+#lab_gall_scr {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 2.5rem;
+    padding: 0;
+    height: auto;
+    overflow: visible;
+}
+
+/* Laboratory Card */
+#lab_cart {
+    background: white;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+}
+
+[data-theme="dark"] #lab_cart {
+    background: var(--bg-tertiary);
+    border-color: rgba(255, 255, 255, 0.05);
+}
+
+#lab_cart:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: var(--shadow-xl);
+}
+
+#lab_img_n_cnt {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+#img_dv {
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+}
+
+#img_dv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lab_card_body {
+    padding: 2rem;
+    flex: 1;
+}
+
+#lab_name {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+#lab_addr {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    min-height: 3rem;
+}
+
+/* Actions */
+#lab_pg_phone {
+    display: flex;
+    gap: 12px;
+    margin-top: auto;
+}
+
+.but {
+    flex: 1;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-md);
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+#lab_phone {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+#lab_phone:hover {
+    background: var(--border-color);
+}
+
+#nur_map {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: white !important;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-md);
+    gap: 8px;
+}
+
+#nur_map:hover {
+    box-shadow: 0 8px 20px rgba(5, 150, 105, 0.3);
+    filter: brightness(1.1);
+}
+
+/* Services Carousel */
+#lab_cart_imgs {
+    width: 100%;
+    padding: 1.5rem;
+    background: rgba(43, 184, 90, 0.03);
+    border-top: 1px solid var(--border-color);
+}
+
+.item_img {
+    position: relative;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    height: 220px;
+}
+
+.item_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.itemname {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background: linear-gradient(transparent, rgba(15, 23, 42, 0.9));
+    color: white !important;
+    font-weight: 700;
+    font-size: 1.1rem !important;
+    text-align: left;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    #lab_gall_scr {
+        grid-template-columns: 1fr;
+    }
+    .lab-hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 3rem 2rem;
+    }
+}

@@ -1,0 +1,2341 @@
+import riceImg from './images/crops/rice.png';
+import maizeImg from './images/crops/maize.png';
+import juteImg from './images/crops/jute.png';
+import cottonImg from './images/crops/cotton.png';
+import coconutImg from './images/crops/coconut.png';
+import papayaImg from './images/crops/papaya.png';
+import orangeImg from './images/crops/orange.png';
+import appleImg from './images/crops/apple.png';
+import muskmelonImg from './images/crops/muskmelon.png';
+import watermelonImg from './images/crops/watermelon.png';
+import grapesImg from './images/crops/grapes.png';
+import mangoImg from './images/crops/mango.png';
+import bananaImg from './images/crops/banana.png';
+import pomegranateImg from './images/crops/pomegranate.png';
+import blackgramImg from './images/crops/blackgram.png';
+import greengramImg from './images/crops/greengram.png';
+import lentilImg from './images/crops/lentil.png';
+import pigeonpeaImg from './images/crops/pigeonpea.png';
+import mothbeanImg from './images/crops/mothbean.png';
+import horsegramImg from './images/crops/horsegram.png';
+import coffeeImg from './images/crops/coffee.png';
+import sugarcaneImg from './images/crops/sugarcane.png';
+import wheatImg from './images/crops/wheat.png';
+import soybeanImg from './images/crops/soybean.png';
+import turmericImg from './images/crops/turmeric.png';
+import gingerImg from './images/crops/ginger.png';
+import garlicImg from './images/crops/garlic.png';
+import brinjalImg from './images/crops/brinjal.png';
+import okraImg from './images/crops/okra.png';
+import cabbageImg from './images/crops/cabbage.png';
+import teaImg from './images/crops/tea.png';
+import onionImg from './images/crops/onion.png';
+
+const UNSPLASH_BASE = "https://images.unsplash.com/";
+
+// --- 61 CROP IMAGERY ARCHIVE ---
+// Core Staples
+// Core Staples (Unsplash fallbacks removed for local assets)
+
+// Fruits & Melons
+// Fruits & Melons (Unsplash fallbacks removed for local assets)
+
+// Pulses & Legumes
+// Pulses & Legumes (Unsplash fallbacks removed for local assets)
+
+// Cash & Plantation
+const COFFEE_ID_UNUSED = ""; // Local image used
+const SUGARCANE_ID_UNUSED = ""; // Local image used
+const WHEAT_ID_UNUSED = ""; // Local image used
+const SOYBEAN_ID_UNUSED = ""; // Local image used
+const TURMERIC_ID_UNUSED = ""; // Local image used
+const ONION_ID_UNUSED = ""; // Local image used
+const GINGER_ID_UNUSED = ""; // Local image used
+const GARLIC_ID_UNUSED = ""; // Local image used
+const SUNFLOWER_ID = "B2QjYfFcIik";
+const POTATO_ID = "jPJ3GqH_HsE";
+const TOMATO_ID = "tLgSgK2NRzk";
+const CHILLI_ID = "L2xhGmPmMNs";
+const BRINJAL_ID_UNUSED = ""; // Local image used
+const OKRA_ID_UNUSED = ""; // Local image used
+const CABBAGE_ID_UNUSED = ""; // Local image used
+const CAULIFLOWER_ID = "photo-1568584711271-6c929fb49b60";
+const GREEN_PEAS_ID = "photo-1592394533824-9440e5d68531";
+const PEAS_ID = "photo-1592394533824-9440e5d68531"; // Fallback
+const CARROT_ID = "photo-1598170845058-32b9d6a5da37";
+const RADISH_ID = "photo-1595183864504-207d4b2938f3";
+const SPINACH_ID = "WZcU0c7zdvs";
+const CUCUMBER_ID = "photo-1670880272001-cc9bd81edbf9";
+
+// Industrial & Spices
+const MUSTARD_ID = "9OSNMwWORb0";
+const SESAME_ID = "7OCx6fvc-K0";
+const CASTOR_ID = "zxyuduazmls";
+const MILLET_ID = "LoYMSkQdVuU";
+const SORGHUM_ID = "7hxH56RU6zs";
+const BARLEY_ID = "hsPrHr0_6tE";
+const TEA_ID_UNUSED = ""; // Local image used
+const RUBBER_ID = "tnF5_PkNUf0";
+const TOBACCO_ID = "DSo8adARLK0";
+const GROUNDNUT_ID = "ZfxkdLAa6SQ";
+const BLACK_PEPPER_ID = "07mSvSqbij4";
+const CARDAMOM_ID = "LJqms4LRWg0";
+const CLOVE_ID = "khMIXm1yIt4";
+const CINNAMON_ID = "f-MOiTcrzrI";
+const NUTMEG_ID = "SVfGD1QJ5jA";
+const VANILLA_ID = "ahfp3XOUnFQ";
+const COCOA_ID = "YpA1Yat9-vY";
+const BETEL_NUT_ID = "XSlZ5HVsOIQ";
+const KIDNEY_ID = "QTGbQFlTvb8";
+const CHICKPEA_ID = "Jb6PjMJrKtY";
+
+export const myList = [
+    {
+        "id": "1",
+        "name": "Rice",
+        "mr_name": "भात",
+        "Period": "Cultivation Period: 4-6 months",
+        "mr_period": "लागवड कालावधी: ४-६ महिने",
+        "description": "Rice is a primary food staple worldwide, particularly in Asia. It requires significant water and warm temperatures to thrive.",
+        "mr_description": "भात हे जगभरातील, विशेषतः आशियातील मुख्य अन्न आहे. याला भरपूर पाणी आणि उबदार हवामानाची गरज असते.",
+        "src": riceImg,
+        "tips": [
+            "Ensure the field remains flooded during the early growth stages",
+            "Maintain consistent nitrogen levels through organic fertilizers",
+            "Control weed growth frequently to ensure maximum yield",
+            "Harvest when the grains turn golden and moisture drops to 20%"
+        ],
+        "mr_tips": [
+            "वाढीच्या कोवळ्या अवस्थेत शेतात पाणी साचून राहील याची खात्री करा",
+            "सेंद्रिय खतांच्या माध्यमातून नत्राची पातळी टिकवून ठेवा",
+            "जास्तीत जास्त उत्पादनासाठी तण वारंवार काढून टाका",
+            "जेव्हा दाणे सोनेरी रंगाचे होतात आणि ओलावा २० टक्क्यांपर्यंत कमी होतो तेव्हाच कापणी करा"
+        ],
+        "compData": { "water": 5, "demand": 5, "effort": "High", "advantage": "High calorie source", "soil": "Clayey/Alluvial", "yield": "1.5-2.5 Tons/Acre", "climate": "20-30°C | 100cm+ Rain", "priceCycle": [2, 3, 3, 3, 3, 2, 2, 1, 1, 1, 1, 2], "logistics": "Farm Storage (Dry/Ventilated) - Can store up to 12 months" }
+    },
+    {
+        "id": "2",
+        "name": "Maize",
+        "mr_name": "मका",
+        "Period": "Cultivation Period: 3-4 months",
+        "mr_period": "लागवड कालावधी: ३-४ महिने",
+        "description": "Maize, also known as corn, is a versatile cereal grain used for food, fodder, and industrial products. It grows well in various climates.",
+        "mr_description": "मका हे एक बहुउद्देशीय तृणधान्य आहे ज्याचा वापर अन्न, चारा आणि औद्योगिक उत्पादनांसाठी केला जातो. हे विविध हवामानात चांगले येते.",
+        "src": maizeImg,
+        "tips": [
+            "Ensure proper soil drainage; maize is sensitive to water-logging",
+            "Plant seeds 3-5 cm deep for optimal germination",
+            "Keep the field weed-free during the first 45 days",
+            "Monitor for Fall Armyworm during the early growth stages"
+        ],
+        "mr_tips": [
+            "मका पाणी साचण्यास संवेदनशील असल्याने निचरा असल्याची खात्री करा",
+            "चांगल्या उगवणक्षमतेसाठी बियाणे ३-५ सेंमी खोलीवर पेरा",
+            "सुरुवातीच्या ४५ दिवसांत शेत तणमुक्त ठेवा",
+            "वाढीच्या सुरुवातीच्या काळात लष्करी अळीवर लक्ष ठेवा"
+        ],
+        "compData": { "water": 3, "demand": 4, "effort": "Medium", "advantage": "Dual-use (Food & Fodder)", "soil": "Loamy/Alluvial", "yield": "1.8-3.0 Tons/Acre", "climate": "21-27°C | 60cm Rain", "priceCycle": [1, 2, 2, 3, 3, 3, 2, 2, 1, 1, 1, 1], "logistics": "Farm Storage (Cool/Dry) - Best sold within 6 months" }
+    },
+    {
+        "id": "3",
+        "name": "Jute",
+        "mr_name": "ज्यूट (ताग)",
+        "Period": "Cultivation Period: 4-5 months",
+        "mr_period": "लागवड कालावधी: ४-५ महिने",
+        "description": "Jute is a long, soft, shiny vegetable fiber that can be spun into coarse, strong threads. It is known as the 'Golden Fiber' of India.",
+        "mr_description": "ताग हा एक लांब, मऊ, चमकदार वनस्पती धागा आहे ज्यापासून कापड आणि दोरखंड तयार केले जातात. याला भारताचा 'सुवर्ण धागा' म्हणतात.",
+        "src": juteImg,
+        "tips": [
+            "Requires standing water for the retting process post-harvest",
+            "Sow in fertile alluvial soil for best fiber quality",
+            "Thin out crowded seedlings to ensure uniform fiber thickness",
+            "Harvest between 100-120 days when small pods appear"
+        ],
+        "mr_tips": [
+            "काढणीनंतर सडवण्याच्या प्रक्रियेसाठी (Retting) पाल्याची गरज असते",
+            "उत्कृष्ट धाग्यासाठी सुपीक गाळाच्या जमििनेट पेरणी करा",
+            "धाग्याची जाडी समान ठेवण्यासाठी विरळणी करा",
+            "१००-१२० दिवसांत जेव्हा लहान शेंगा येतात तेव्हा काढणी करा"
+        ],
+        "compData": { "water": 4, "demand": 4, "effort": "High", "advantage": "High industrial fiber value", "soil": "Alluvial/Loamy", "yield": "0.8-1.2 Tons/Acre", "climate": "24-37°C | 150cm Rain", "priceCycle": [2, 2, 3, 3, 3, 2, 1, 1, 1, 1, 2, 2], "logistics": "Immediate Mill Delivery (Retting process requires factory setup)" }
+    },
+    {
+        "id": "4",
+        "name": "Cotton",
+        "mr_name": "कापूस (पांढरे सोने)",
+        "Period": "Cultivation Period: 6-8 months",
+        "mr_period": "लागवड कालावधी: ६-८ महिने",
+        "description": "Cotton is a soft, fluffy staple fiber that grows in a boll around the seeds of the cotton plant. It is a major cash crop in India and globally.",
+        "mr_description": "कापूस हे एक मऊ, मऊ धागा देणारे पीक आहे जे बोंडात वाढते. हे भारत आणि जागतिक स्तरावर एक प्रमुख नगदी पीक आहे.",
+        "src": cottonImg,
+        "tips": [
+            "Monitor closely for bollworms during the flowering stage",
+            "Maintain consistent soil moisture but avoid saturated roots",
+            "Apply Boron and Zinc micronutrients for better boll retention",
+            "Pick cotton only when the bolls are fully dry and fluffy"
+        ],
+        "mr_tips": [
+            "फुलोऱ्याच्या काळात बोंड अळीवर बारकाईने लक्ष ठेवा",
+            "जमिनीत सतत ओलावा ठेवा पण पाणी साचू देऊ नका",
+            "बोंडे टिकवून ठेवण्यासाठी बोरॉन आणि झिंकचा वापर करा",
+            "जेव्हा बोंडे पूर्णपणे कोरडी आणि मऊ होतात तेव्हाच वेचणी करा"
+        ],
+        "compData": { "water": 4, "demand": 5, "effort": "High", "advantage": "Premium textile cash crop", "soil": "Black/Alluvial", "yield": "10-12 Q/Acre", "climate": "21-30°C | 50cm Rain", "priceCycle": [1, 1, 2, 2, 3, 3, 3, 2, 2, 1, 1, 1], "logistics": "Factory (Industrial Ginning Queue) - Direct mill transport" }
+    },
+    {
+        "id": "5",
+        "name": "Coconut",
+        "mr_name": "नारळ (माड)",
+        "Period": "Cultivation Period: 12 months (Harvest)",
+        "mr_period": "लागवड कालावधी: १२ महिने (काढणी)",
+        "description": "Coconut is a versatile palm tree grown throughout the tropics for its fruit, fiber, and aesthetic beauty. It thrives in coastal areas.",
+        "mr_description": "नारळ हे एक बहुउद्देशीय झाड असून ते फळ, धागा आणि सौंदर्यासाठी उष्णकटिबंधीय भागात लावले जाते. हे किनारपट्टी भागात जोमाने वाढते.",
+        "src": coconutImg,
+        "tips": [
+            "Maintain a 5-meter radius around the trunk free from weeds",
+            "Apply organic compost and salt twice a year for nut quality",
+            "Ensure proper drainage in the basin during heavy rains",
+            "Watch for Rhinoceros Beetle damage in the crown"
+        ],
+        "mr_tips": [
+            "खोडाभोवती ५ मीटरचा परिसर तणमुक्त ठेवा",
+            "उत्तम फळांसाठी वर्षातून दोनदा सेंद्रिय खत आणि मीठ वापरा",
+            "जास्त पावसाच्या वेळी आळ्यात योग्य निचरा होईल याची काळजी घ्या",
+            "झाडाच्या शेंड्यावर भुंग्यांचा प्रादुर्भाव होणार नाही याची खबरदारी घ्या"
+        ],
+        "compData": { "water": 4, "demand": 4, "effort": "Medium", "advantage": "Year-round income flow", "soil": "Sandy/Laterite", "yield": "40-60 Nuts/Tree", "climate": "15-35°C | 100cm Rain", "priceCycle": [2, 3, 3, 3, 2, 1, 1, 1, 2, 3, 3, 2], "logistics": "Farm (De-husking & Drying). Copra is highly stable for 6-8 months." }
+    },
+    {
+        "id": "6",
+        "name": "Papaya",
+        "mr_name": "पपई",
+        "Period": "Cultivation Period: 9-11 months",
+        "mr_period": "लागवड कालावधी: ९-११ महिने",
+        "description": "Papaya is a fast-growing tropical fruit tree known for its sweet, orange-fleshed fruit. It requires well-drained soil and sun.",
+        "mr_description": "पपई हे वेगाने वाढणारे उष्णकटिबंधीय फळ असून ते गोड चव आणि आरोग्यासाठीच्या फायद्यांसाठी ओळखले जाते. हे पीक वर्षभर उत्पादन देते.",
+        "src": papayaImg,
+        "tips": [
+            "Protect young plants from frost and heavy winds",
+            "Avoid water stagnation to prevent root rot diseases",
+            "Apply potash-rich fertilizers for sweeter fruit quality",
+            "Harvest when the fruit starts showing yellow streaks"
+        ],
+        "mr_tips": [
+            "मुळकुजव्या रोगापासून बचावासाठी जमिनीचा निचरा उत्तम ठेवा",
+            "परागीकरणासाठी नर आणि मादी झाडांचे योग्य प्रमाण ठेवा",
+            "फळांना तडे जाऊ नयेत म्हणून बोरॉन या सूक्ष्म अन्नद्रव्याचा वापर करा",
+            "लांबच्या मार्केटसाठी २५-३३% फळ पिवळे झाल्यावर काढणी करा"
+        ],
+        "compData": { "water": 3, "demand": 4, "effort": "Medium", "advantage": "Fast-growing high-yield fruit", "soil": "Loamy/Well-drained", "yield": "30-50 Kg/Tree", "climate": "25-30°C | 100cm Rain", "priceCycle": [2, 2, 3, 3, 2, 1, 1, 2, 2, 3, 3, 2], "logistics": "Logistics (Rapid Air/Road). Fast ripening; deliver within 24-48h of harvest." }
+    },
+    {
+        "id": "7",
+        "name": "Orange",
+        "mr_name": "संत्री",
+        "Period": "Cultivation Period: 6-8 months",
+        "mr_period": "लागवड कालावधी: ६-८ महिने",
+        "description": "Oranges are one of the most popular citrus fruits, rich in Vitamin C. They are grown in subtropical and tropical climates.",
+        "mr_description": "संत्री हे सर्वाधिक लोकप्रिय लिंबूवर्गीय फळांपैकी एक असून त्यात क जीवनसत्व भरपूर असते. यासाठी उपोष्णकटिबंधीय हवामानाची गरज असते.",
+        "src": orangeImg,
+        "tips": [
+            "Prune inner branches to ensure light reaches the center",
+            "Maintain slightly acidic to neutral soil pH (6.0-7.0)",
+            "Irrigate deeply during flowering to prevent fruit drop",
+            "Monitor for Citrus Canker during the rainy season"
+        ],
+        "mr_tips": [
+            "जास्त फुलोऱ्यासाठी 'बहार' व्यवस्थापन (पाण्याचा ताण) करा",
+            "वारा पसरवणाऱ्या सिट्रस सायला आणि मावा किडीवर लक्ष ठेवा",
+            "अन्नद्रव्ये शोषण्यासाठी जमिनीचा सामू ६.० ते ७.५ दरम्यान ठेवा",
+            "जास्त पाणी लागणाऱ्या पिकांसोबत (उदा. भात) आंतरपीक घेणे टाळा"
+        ],
+        "compData": { "water": 4, "demand": 4, "effort": "Medium", "advantage": "High retail demand", "soil": "Loamy/Alluvial", "yield": "150-200 Kg/Tree", "climate": "15-35°C | 75cm Rain", "priceCycle": [1, 1, 2, 3, 3, 3, 2, 2, 3, 3, 2, 1], "logistics": "Logistics (Cool ventilated transit). Durable for 2-3 weeks in ambient shade." }
+    },
+    {
+        "id": "8",
+        "name": "Apple",
+        "mr_name": "सफरचंद",
+        "Period": "Cultivation Period: 4-5 months",
+        "mr_period": "लागवड कालावधी: ४-५ महिने",
+        "description": "Apples are one of the most widely cultivated tree fruits. They thrive in temperate climates with cold winters.",
+        "mr_description": "सफरचंद हे जागतिक स्तरावर उत्पादित होणारे उच्च मूल्याचे फळ आहे. गुणवत्तापूर्ण फळांसाठी याला थंड हवामानाची गरज असते.",
+        "src": appleImg,
+        "tips": [
+            "Requirements 1000-1500 chilling hours for good fruiting",
+            "Thin out extra fruits to improve individual fruit size",
+            "Prune during dormancy to maintain an open-center shape",
+            "Spray copper fungicides to prevent Apple Scab"
+        ],
+        "mr_tips": [
+            "झाडांना ८००-१२०० तास ७ अंश सेल्सिअसपेक्षा कमी तापमान मिळेल याची खात्री करा",
+            "हिवाळ्यात झाडांची छाटणी करून त्यांना योग्य आकार द्या",
+            "पावसाळ्यात पडणारे डाग (Scab) आणि भुरी रोगावर लक्ष ठेवा",
+            "फळांची विरळणी करा जेणेकरून उर्वरित फळांची वाढ चांगली होईल"
+        ],
+        "compData": { "water": 4, "demand": 5, "effort": "High", "advantage": "Premium value export fruit", "soil": "Loamy/Hilly Soil", "yield": "25-40 Kg/Tree", "climate": "10-20°C | Cold Winter", "priceCycle": [3, 3, 3, 2, 2, 2, 1, 1, 1, 2, 2, 3] }
+    },
+    {
+        "id": "9",
+        "name": "Muskmelon",
+        "mr_name": "खरबूज",
+        "Period": "Cultivation Period: 3 months",
+        "mr_period": "लागवड कालावधी: ३ महिने",
+        "description": "Muskmelons are sweet fruit crops cultivated for their juicy and aromatic flesh. They require warm temperatures and well-drained sandy soil.",
+        "mr_description": "खरबूज हे उन्हाळ्यातील एक ताजेतवाने फळ असून ते वेलवर्गीय आहे. हे प्रखर सूर्यप्रकाश आणि कोरड्या हवामानात चांगले वाढते.",
+        "src": muskmelonImg,
+        "tips": [
+            "Grown best in hot, dry climates with low humidity",
+            "Pinch off early flowers to encourage stronger vine growth",
+            "Reduce watering 10 days before harvest to increase sugar",
+            "Harvest when the fruit detaches easily from the stem"
+        ],
+        "mr_tips": [
+            "ओलावा टिकवून ठेवण्यासाठी आणि फळे स्वच्छ राहण्यासाठी मल्चिंग पेपर वापरा",
+            "गोडवा वाढवण्यासाठी काढणीपूर्वी १ आठवडा पाणी देणे बंद करा",
+            "फळमाशी या मुख्य किडीवर विशेष लक्ष ठेवा",
+            "जेव्हा फळ देठापासून सहज वेगळे होते तेव्हाच काढणी करा"
+        ],
+        "compData": { "water": 2, "demand": 3, "effort": "Medium", "advantage": "Short-cycle summer crop", "soil": "Sandy/Loamy", "yield": "30-50 Q/Acre", "climate": "25-30°C | Low Humidity", "priceCycle": [3, 3, 2, 1, 1, 2, 3, 3, 3, 3, 3, 3], "logistics": "Logistics (Rapid Road Transit). Deliver within 24h as quality drops fast." }
+    },
+    {
+        "id": "10",
+        "name": "Watermelon",
+        "mr_name": "कलिंगड (तरबूज)",
+        "Period": "Cultivation Period: 2-3 months",
+        "mr_period": "लागवड कालावधी: २-३ महिने",
+        "description": "Watermelons are refreshing summer fruit crops with juicy, sweet flesh. They require warm temperatures, ample sunlight, and well-drained soil.",
+        "mr_description": "कलिंगड हे उन्हाळ्यातील एक लोकप्रिय ओलावा देणारे फळ आहे. यात ९२% पाणी असते आणि ते कोमट जमिनीवर आणि सूर्यप्रकाशात चांगले वाढते.",
+        "src": watermelonImg,
+        "tips": [
+            "Plant in sandy-loam soil for optimal thermal absorption",
+            "Mulch with straw to keep fruits clean and retain moisture",
+            "Hand-pollinate the first few flowers for a head start",
+            "Check for a hollow thud sound to identify ripeness"
+        ],
+        "mr_tips": [
+            "फळे तडकण्यापासून वाचवण्यासाठी जमििनेट समप्रमाणात ओलावा ठेवा",
+            "फळांना सर्व बाजूंनी सारखा रंग येण्यासाठी ती अधूनमधून फिरवा",
+            "फळ पिकल्याची खात्री करण्यासाठी फळावर थाप मारून 'ठोक' आवाज तपासा",
+            "फळाच्या वाढीच्या काळात पोटॅश खताचा जास्तीत जास्त वापर करा"
+        ],
+        "compData": { "water": 2, "demand": 4, "effort": "Medium", "advantage": "Quick massive returns", "soil": "Sandy/Sandy Loam", "yield": "40-60 Q/Acre", "climate": "24-35°C | Full Sun", "priceCycle": [3, 3, 2, 1, 1, 2, 3, 3, 3, 3, 3, 3], "logistics": "Logistics (Vented Truck Transit). Durable for 7 days if skin is intact." }
+    },
+    {
+        "id": "11",
+        "name": "Grapes",
+        "mr_name": "द्राक्षे",
+        "Period": "Cultivation Period: 2-3 years",
+        "mr_period": "लागवड कालावधी: २-३ वर्षे",
+        "description": "Grapes are vine fruit crops cultivated for fresh consumption and wine production. They require a temperate to warm climate and trellis support.",
+        "mr_description": "द्राक्षे ही खाण्यासाठी, वाईनसाठी आणि बेदाण्यांसाठी वापरली जाणारी वेलवर्गीय फळे आहेत. हे भारतासाठी एक उच्च मूल्याचे निर्यातक्षम पीक आहे.",
+        "src": grapesImg,
+        "tips": [
+            "Use strong trellis support; vines can become very heavy during fruiting",
+            "Prune at least 70-90% of the previous year's growth for better yield",
+            "Avoid overhead watering to prevent powdery mildew",
+            "Harvest when the stems of the clusters start to turn brown"
+        ],
+        "mr_tips": [
+            "मण्यांचा आकार आणि लांबी वाढवण्यासाठी संजीवकाचा (GA) वापर करा",
+            "सूर्यप्रकाश मण्यांपर्यंत पोहचण्यासाठी वेलाची मांडणी नीट ठेवा",
+            "छाटणीनंतरच्या काळात केवडा (Downy Mildew) रोगावर लक्ष ठेवा",
+            "जेव्हा गोडवा (TSS) १८-२० ब्रिक्सपर्यंत पोहचतो तेव्हाच काढणी करा"
+        ],
+        "compData": { "water": 4, "demand": 5, "effort": "High", "advantage": "Extremely high market value", "soil": "Sandy/Gravelly Loam", "yield": "12-15 Q/Acre", "climate": "15-35°C | Subtropical", "priceCycle": [3, 2, 1, 1, 1, 2, 3, 3, 3, 3, 3, 3], "logistics": "Cold Storage (0-1°C). Pre-cooling is vital within 4h of harvest for export quality." }
+    },
+    {
+        "id": "12",
+        "name": "Mango",
+        "mr_name": "आंबा (फळांचा राजा)",
+        "Period": "Cultivation Period: 3-5 years",
+        "mr_period": "लागवड कालावधी: ३-५ वर्षे",
+        "description": "The king of fruits, mango is a tropical stone fruit. It grows in a variety of climates and is highly valued for its sweet, juicy flesh.",
+        "mr_description": "फळांचा राजा मानला जाणारा आंबा हा एक उष्णकटिबंधीय फळ आहे. हे विविध हवामानात वाढते आणि त्याच्या गोड, रसाळ गरासाठी अत्यंत मोलाचे आहे.",
+        "src": mangoImg,
+        "tips": [
+            "Ensure excellent drainage; mangoes are prone to root rot in standing water",
+            "Smoke or smudge trees during flowering to induce better fruit set",
+            "Monitor for Mango Hopper pests during the early flowering phase",
+            "Harvest with a small stem attachment to prevent sap burn on skin"
+        ],
+        "mr_tips": [
+            "पाणी साचणार नाही याची काळजी घ्या; आंब्याची मुळे सडण्याची शक्यता असते",
+            "फुलोऱ्याच्या काळात झाडांना धूर दिल्यास फळधारणा चांगली होते",
+            "फुलोऱ्याच्या सुरुवातीच्या काळात तुडतुड्यांवर (Mango Hopper) लक्ष ठेवा",
+            "फळ काढताना देठासह काढा जेणेकरून चिकाचा डाग पडणार नाही"
+        ],
+        "compData": { "water": 4, "demand": 5, "effort": "High", "advantage": "Global demand, high export", "soil": "Alluvial/Lateritic", "yield": "50-80 Q/Acre", "climate": "24-30°C | Tropical", "priceCycle": [3, 3, 2, 1, 1, 1, 2, 3, 3, 3, 3, 3], "logistics": "Cold Storage (12°C). Ethylene management required for controlled ripening." }
+    },
+    {
+        "id": "13",
+        "name": "Banana",
+        "mr_name": "केळी",
+        "Period": "Cultivation Period: 9-12 months",
+        "mr_period": "लागवड कालावधी: ९-१२ महिने",
+        "description": "Bananas are nutritious tropical fruit crops that require warm, humid climates. They are cultivated year-round in many parts of the world.",
+        "mr_description": "केळी हे पोषक उष्णकटिबंधीय फळ असून याला उष्ण आणि दमट हवामानाची गरज असते. जगातील अनेक भागांत याचे वर्षभर उत्पादन घेतले जाते.",
+        "src": bananaImg,
+        "tips": [
+            "Apply high amounts of potassium for larger, sweeter bunches",
+            "Remove the male flower (navel) after the last hand appears",
+            "Support the plant with bamboo poles as the bunch grows heavy",
+            "Keep soil consistently moist but never waterlogged"
+        ],
+        "mr_tips": [
+            "मोठ्या आणि गोड घडांसाठी पोटॅश खताचा जास्तीत जास्त वापर करा",
+            "शेवटचा फणी आल्यानंतर नर फूल (केळफूल) काढून टाका",
+            "घड जड झाल्यावर झाडाला बांबूच्या काठ्यांचा आधार द्या",
+            "जमिनेट सतत ओलावा ठेवा पण पाणी साचू देऊ नका"
+        ],
+        "compData": { "water": 5, "demand": 4, "effort": "Medium", "advantage": "Constant market demand", "soil": "Deep Alluvial/Clayey", "yield": "25-30 Kg/Bunch", "climate": "15-35°C | Humid", "priceCycle": [2, 2, 3, 3, 2, 1, 1, 1, 2, 3, 3, 2], "logistics": "Logistics (Rapid Reefers). Temperature sensitive; deliver within 24-48h." }
+    },
+    {
+        "id": "14",
+        "name": "Pomegranate",
+        "mr_name": "डाळिंब",
+        "Period": "Cultivation Period: 3-4 years",
+        "mr_period": "लागवड कालावधी: ३-४ वर्षे",
+        "description": "Pomegranates are fruit crops with vibrant red arils, thriving in semi-arid to subtropical climates. They are prized for their antioxidant properties.",
+        "mr_description": "डाळिंब हे रसाळ आणि लाल फळ असून ते अर्ध-कोरड्या आणि उपोष्णकटिबंधीय हवामानात चांगले येते. हे अँटीऑक्सिडंट गुणधर्मांसाठी ओळखले जाते.",
+        "src": pomegranateImg,
+        "tips": [
+            "Ensure moderate irrigation; avoids water stagnation in roots",
+            "Prune older branches during the dormant winter phase",
+            "Apply organic manure in the pre-monsoon period",
+            "Protect from bacterial blight during heavy rain spells"
+        ],
+        "mr_tips": [
+            "मध्यम सिंचन ठेवा; मुळांमध्ये पाणी साचणार नाही याची काळजी घ्या",
+            "सुप्त अवस्थेत (हिवाळ्यात) जुन्या फांद्यांची छाटणी करा",
+            "पावसाळ्यापूर्वी भरपूर सेंद्रिय खतांचा वापर करा",
+            "जास्त पावसाच्या काळात तेल्या रोगापासून (Bacterial Blight) पिकाचे रक्षण करा"
+        ],
+        "compData": { "water": 3, "demand": 5, "effort": "Medium", "advantage": "High drought tolerance", "soil": "Loamy/Deep Soil", "yield": "10-15 Kg/Tree", "climate": "20-30°C | Semi-arid", "priceCycle": [3, 2, 2, 2, 3, 3, 3, 2, 2, 3, 3, 3], "logistics": "Logistics (Ambient Vented). Highly durable for 1-2 months in cool dry space." }
+    },
+    {
+        "id": "15",
+        "name": "Blackgram",
+        "mr_name": "उडीद",
+        "Period": "Cultivation Period: 3-4 months",
+        "mr_period": "लागवड कालावधी: ३-४ महिने",
+        "description": "Blackgram is a highly nutritious pulse crop widely grown in India, essential for many traditional staples like dal and idli.",
+        "mr_description": "उडीद हे प्रथिनांनी समृद्ध असलेले पोषक कडधान्य आहे. डाळ, डोसा आणि इडली यांसारख्या पारंपरिक पदार्थांसाठी हे अत्यंत आवश्यक आहे.",
+        "src": blackgramImg,
+        "tips": [
+            "Requires accurate seed-bed preparation for uniform growth",
+            "Inoculate seeds with Rhizobium culture for nitrogen fixation",
+            "Keep field weed-free during the 20-40 day growth phase",
+            "Harvest when the pods turn black or dark brown"
+        ],
+        "mr_tips": [
+            "समान वाढीसाठी जमीन चांगली तयार करणे आवश्यक आहे",
+            "नत्र स्थिरीकरणासाठी बियाण्याला रायझोबियमची बीजप्रक्रिया करा",
+            "पेरणीनंतरच्या २०-४० दिवसांच्या काळात शेत तणमुक्त ठेवा",
+            "जेव्हा शेंगा काळ्या किंवा गडद तपकिरी होतात तेव्हा काढणी करा"
+        ],
+        "compData": { "water": 2, "demand": 4, "effort": "Low", "advantage": "Enriches soil nitrogen", "soil": "Black Cotton/Loamy", "yield": "4-6 Q/Acre", "climate": "25-35°C | Warm", "priceCycle": [2, 2, 3, 3, 3, 2, 1, 1, 1, 1, 2, 2], "logistics": "Farm (Dry ventilated silos). Essential to keep moisture <12% for shelf life." }
+    },
+    {
+        "id": "16",
+        "name": "Greengram",
+        "mr_name": "मूग",
+        "Period": "Cultivation Period: 2-3 months",
+        "mr_period": "लागवड कालावधी: २-३ महिने",
+        "description": "Greengram, or Moong dal, is a short-duration pulse crop valued for its high protein content and digestibility.",
+        "mr_description": "मूग हे कमी कालावधीत येणारे कडधान्य असून ते पचायला हलके आणि प्रथिनांनी समृद्ध असते.",
+        "src": greengramImg,
+        "tips": [
+            "Short duration crop; best for inter-cropping between seasons",
+            "Avoid heavy irrigation during the flowering stage",
+            "Monitor for Yellow Mosaic Virus in early growth",
+            "Dry the harvested grain to 10% moisture for storage"
+        ],
+        "mr_tips": [
+            "कमी कालावधीचे पीक असल्याने दोन हंगामांच्या मध्ये घेण्यास उत्तम आहे",
+            "फुलोऱ्याच्या काळात जास्त पाणी देणे टाळा",
+            "वाढीच्या सुरुवातीच्या काळात पिवळा मोझॅक (Yellow Mosaic) रोगावर लक्ष ठेवा",
+            "साठवणुकीसाठी धान्य १०% ओलावा राहेपर्यंत उन्हात नीट वाळवा"
+        ],
+        "compData": { "water": 2, "demand": 4, "effort": "Low", "advantage": "Short cycle, soil friendly", "soil": "Alluvial/Loamy", "yield": "3-5 Q/Acre", "climate": "25-35°C | Short rainy", "priceCycle": [2, 2, 3, 3, 3, 2, 1, 1, 1, 1, 2, 2], "logistics": "Farm (Dry sacks in shade). Maintain moisture-free environment to avoid sprouting." }
+    },
+    {
+        "id": "17",
+        "name": "Lentil",
+        "mr_name": "मसूर",
+        "Period": "Cultivation Period: 4-5 months",
+        "mr_period": "लागवड कालावधी: ४-५ महिने",
+        "description": "Lentils are nutrient-dense pulses, excellent for soil health through nitrogen fixation and a staple for sustainable diets.",
+        "mr_description": "मसूर हे पोषक कडधान्य असून ते जमिनीचा कस सुधारण्यासाठी (नत्र स्थिरीकरण) उपयुक्त आहे.",
+        "src": lentilImg,
+        "tips": [
+            "Best sown in cool weather; sensitive to extreme heat during flowering",
+            "Requires less water than most pulses; avoid over-irrigation",
+            "Apply phosphatic fertilizers to ensure healthy root development",
+            "Harvest when pods are yellow to prevent seed shattering"
+        ],
+        "mr_tips": [
+            "थंड हवामानात पेरणी करणे सर्वोत्तम; फुलोऱ्याच्या वेळी कडक ऊन टाळा",
+            "इतर कडधान्यांच्या तुलनेत याला कमी पाणी लागते; अति सिंचन टाळा",
+            "मुळांच्या वाढीसाठी स्फुरदयुक्त खतांचा वापर करा",
+            "दाणे सांडू नयेत म्हणून शेंगा पिवळ्या झाल्यावरच काढणी करा"
+        ],
+        "compData": { "water": 2, "demand": 4, "effort": "Low", "advantage": "Low water requirement", "soil": "Alluvial/Black Soil", "yield": "5-7 Q/Acre", "climate": "15-25°C | Cool/Dry", "priceCycle": [1, 1, 1, 2, 3, 3, 3, 2, 2, 2, 2, 1], "logistics": "Farm (Dry Storage). Resistant to storage pests if kept cool and dry." }
+    },
+    {
+        "id": "18",
+        "name": "Pigeon Peas",
+        "mr_name": "तूर (अरहर)",
+        "Period": "Cultivation Period: 6-9 months",
+        "mr_period": "लागवड कालावधी: ६-९ महिने",
+        "description": "Pigeon Peas, or Arhar, are a major legume crop in tropical regions, providing essential protein and fodder.",
+        "mr_description": "तूर हे उष्णकटिबंधीय भागातील मुख्य कडधान्य असून ते प्रथिनांचा मोठा स्रोत आहे.",
+        "src": pigeonpeaImg,
+        "tips": [
+            "Maintain wide spacing to allow deep root penetration",
+            "Inoculation with specific Rhizobium strains improves yield",
+            "Monitor for pod borer during the pod development stage",
+            "Long-duration crop; ensure moisture conservation during dry spells"
+        ],
+        "mr_tips": [
+            "मुळांच्या खोलवर वाढीसाठी दोन झाडांत सवकाश अंतर ठेवा",
+            "उत्पादनात वाढ करण्यासाठी विशिष्ट रायझोबियम कल्चरची बीजप्रक्रिया करा",
+            "शेंगांच्या वाढीच्या काळात शेंगा पोखरणारी अळी यावर लक्ष ठेवा",
+            "हे दीर्घ कालावधीचे पीक असल्याने कोरड्या काळात ओलावा टिकवून ठेवण्याचा प्रयत्न करा"
+        ],
+        "compData": { "water": 2, "demand": 5, "effort": "Medium", "advantage": "High protein, core staple", "soil": "Deep Black/Regur", "yield": "6-8 Q/Acre", "climate": "20-30°C | Rainfall-fed", "priceCycle": [1, 2, 3, 3, 3, 2, 1, 1, 1, 1, 2, 1], "logistics": "Farm (Ventilated Silos). Highly stable; can store for 12 months in aerated bags." }
+    },
+    {
+        "id": "19",
+        "name": "Moth Beans",
+        "mr_name": "मटकी",
+        "Period": "Cultivation Period: 3-4 months",
+        "mr_period": "लागवड कालावधी: ३-४ महिने",
+        "description": "Moth Beans are highly drought-resistant legumes grown in arid and semi-arid regions of India.",
+        "mr_description": "मटकी हे अत्यंत दुष्काळ सहन करणारे कडधान्य असून ते कोर्या हवामानातही चांगले येते.",
+        "src": mothbeanImg,
+        "tips": [
+            "Extremely drought tolerant; essential for arid-zone agriculture",
+            "Matures fast; ideal for areas with very short rainy seasons",
+            "Prevents soil erosion due to its dense ground-cover habit",
+            "Harvest when pods are dry and rattle when shaken"
+        ],
+        "mr_tips": [
+            "हे पीक अत्यंत काटक असून कमी पावसाच्या प्रदेशासाठी उत्तम आहे",
+            "लवकर तयार होणारे पीक; कमी पावसाच्या काळासाठी आदर्श",
+            "जमिनीवर वेगाने पसरत असल्याने मातीची धूप थांबवण्यास मदत करते",
+            "जेव्हा शेंगा वाळतात आणि हलवल्यावर आवाज येतो तेव्हा काढणी करा"
+        ],
+        "compData": { "water": 1, "demand": 3, "effort": "Low", "advantage": "Survives in desert heat", "soil": "Sandy/Light Soil", "yield": "2-4 Q/Acre", "climate": "25-45°C | Extreme heat", "priceCycle": [2, 2, 3, 3, 3, 2, 1, 1, 1, 1, 1, 2], "logistics": "Farm (Underground pits or silos). Natural resistance to dry-zone storage pests." }
+    },
+    {
+        "id": "20",
+        "name": "Horse Gram",
+        "mr_name": "हुलगा (कुळीथ)",
+        "Period": "Cultivation Period: 4-5 months",
+        "mr_period": "लागवड कालावधी: ४-५ महिने",
+        "description": "Horse Gram is a hardy pulse crop known for its medicinal benefits and high nutritional value, resilient to harsh conditions.",
+        "mr_description": "हुलगा हे एक अत्यंत काटक कडधान्य असून ते त्याच्या औषधी गुणधर्मांसाठी आणि पोषक मूल्यांसाठी प्रसिद्ध आहे.",
+        "src": horsegramImg,
+        "tips": [
+            "Known as an 'emergency crop' due to its drought resilience",
+            "Grows well on poor soils where other crops might fail",
+            "Maintain soil aeration with light hoeing in early growth",
+            "Highly nutritious; protect from moisture during the drying phase"
+        ],
+        "mr_tips": [
+            "अत्यंत दुष्काळी परिस्थितीतही टिकत असल्याने याला 'संकटकालीन पीक' म्हटले जाते",
+            "जिथे इतर पिके येत नाहीत अशा हलक्या जमिनीवरही याची वाढ चांगली होते",
+            "वाढीच्या कोवळ्या टप्प्यात हलकी खुरपणी करून जमिनीत हवा खेळती ठेवा",
+            "पोषक मूल्ये टिकवून ठेवण्यासाठी वाळवणीच्या काळात ओलाव्यापासून संरक्षण करा"
+        ],
+        "compData": { "water": 1, "demand": 3, "effort": "Low", "advantage": "Hardiest pulse crop", "soil": "Red/Poor Soil", "yield": "3-5 Q/Acre", "climate": "20-35°C | Marginal soil", "priceCycle": [2, 2, 3, 3, 3, 2, 1, 1, 1, 1, 1, 2], "logistics": "Farm (Dry Bag Storage). Exceptionally hardy; minimal storage requirements if kept dry." }
+    },
+    {
+        "id": "21",
+        "name": "Chickpea",
+        "mr_name": "हरभरा (चणा)",
+        "Period": "Cultivation Period: 3-4 months",
+        "mr_period": "लागवड कालावधी: ३-४ महिने",
+        "description": "Chickpea is a major cool-season pulse crop essential for protein-rich diets. It is a key ingredient in many traditional dishes like hummus and chana masala.",
+        "mr_description": "हरभरा हे हिवाळ्यातील मुख्य कडधान्य असून ते प्रथिनांचा मोठा स्रोत आहे. भारतीय आहारात याला विशेष महत्त्व आहे.",
+        "src": `${UNSPLASH_BASE}${CHICKPEA_ID}?q=80&w=800&auto=format&fit=crop`,
+        "tips": [
+            "Grown best after direct rainfall or pre-sowing irrigation",
+            "Avoid excessive nitrogen; it encourages leaf growth over seeds",
+            "Provide support if the variety is climbing or trailing",
+            "Harvest when beans are firm and pods change color significantly"
+        ],
+        "mr_tips": [
+            "पेरणीपूर्वी जमिनेट पुरेसा ओलावा असल्याची खात्री करा",
+            "जास्त नत्र टाळा; यामुळे झाडाची वाढ जास्त होते पण शेंगा कमी लागतात",
+            "वेलट प्रकारच्या वाणांना पेरणीनंतर योग्य आधार द्या",
+            "जेव्हा दाणे टणक होतात आणि घाटांचा (शेंगा) रंग बदलतो तेव्हा काढणी करा"
+        ],
+        "compData": { "water": 2, "demand": 5, "effort": "Low", "advantage": "High market stability", "soil": "Medium Black Soil", "yield": "8-10 Q/Acre", "climate": "15-25°C | Winter crop", "priceCycle": [1, 1, 1, 2, 3, 3, 3, 2, 2, 2, 2, 1], "logistics": "Farm (Cold/Dry ventilated room). High durability; essential for price-timing strategies." }
+    },
+    {
+        "id": "22",
+        "name": "Coffee",
+        "mr_name": "कॉफी",
+        "Period": "Cultivation Period: 3-4 years",
+        "mr_period": "लागवड कालावधी: ३-४ वर्षे",
+        "description": "Coffee is a high-value plantation crop cultivated on well-drained tropical slopes.",
+        "mr_description": "कॉफी हे एक उच्च मूल्याचे मळा पीक असून ते डोंगरउतारावरील निचऱ्याच्या जमिनेट लावले जाते.",
+        "src": coffeeImg,
+        "tips": [
+            "Coffee berries need partial shade provided by taller trees",
+            "Maintain consistent soil moisture without water accumulation",
+            "Prune regularly to keep trees at a reachable height for harvest",
+            "Harvest only fully ripe red berries ('cherries') for quality"
+        ],
+        "mr_tips": [
+            "कॉफीच्या फळांना मोठ्या झाडांच्या सावलीची गरज असते",
+            "जमिनेट सतत ओलावा ठेवा पण पाणी साचू देऊ नका",
+            "काढणी सुलभ होण्यासाठी झाडांची नियमित छाटणी करून उंची मर्यादित ठेवा",
+            "उत्कृष्ट प्रतीसाठी केवळ पूर्ण पिकलेली लाल फळेच (चेरी) खुडा"
+        ],
+        "compData": { "water": 4, "demand": 5, "effort": "High", "advantage": "Premium plantation export", "soil": "Rich Loamy/Forest Soil", "yield": "800-1000 Kg/Acre", "climate": "15-28°C | High rainfall", "priceCycle": [2, 2, 3, 3, 3, 2, 2, 2, 2, 3, 3, 3], "logistics": "Farm (Pulping & Drying). Transport to curing works for final grading." }
+    },
+    {
+        "id": "23",
+        "name": "Sugarcane",
+        "mr_name": "ऊस",
+        "Period": "Cultivation Period: 12-18 months",
+        "mr_period": "लागवड कालावधी: १२-१८ महिने",
+        "description": "Sugarcane is a primary source of sugar and ethanol, requiring tropical warmth and humidity. It is one of the most widely grown crops in India.",
+        "mr_description": "ऊस हा साखर आणि इथेनॉलचा प्रमुख स्रोत असून याला उष्ण आणि दमट हवामानाची गरज असते.",
+        "src": sugarcaneImg,
+        "tips": [
+            "Adopt 'earthing up' after 3-4 months to support the heavy stalks",
+            "Requires substantial irrigation during the summer tillering stage",
+            "Monitor for Red Rot disease in high waterlogged areas",
+            "Harvest when the lower leaves dry up and juice Brix rises"
+        ],
+        "mr_tips": [
+            "भारी वजनाच्या कांड्यांना आधार देण्यासाठी ३-४ महिन्यांनंतर भर (Earthing up) द्या",
+            "उन्हाळ्यातील फुटव्यांच्या काळात भरपूर पाणी द्या",
+            "पाणी साचणाऱ्या भागात 'लाल कुजव्या' (Red Rot) रोगावर लक्ष ठेवा",
+            "जेव्हा खालची पाने वाळतात आणि कांड्यातील गोडवा वाढतो तेव्हाच तोडणी करा"
+        ],
+        "compData": { "water": 5, "demand": 5, "effort": "High", "advantage": "Yields high juice & biomass", "soil": "Deep Alluvial/Heavy", "yield": "30-45 Tons/Acre", "climate": "21-30°C | 150cm Rain", "priceCycle": [2, 2, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2], "logistics": "Immediate Mill Delivery (Factory Bound - Crush in 24h). NOT for farm storage." }
+    },
+    {
+        "id": "24",
+        "name": "Wheat",
+        "mr_name": "गहू",
+        "Period": "Cultivation Period: 4-5 months",
+        "mr_period": "लागवड कालावधी: ४-५ महिने",
+        "description": "Wheat is a primary cereal grain and a staple food globally, especially in North India.",
+        "mr_description": "गहू हे जगातील प्रमुख तृणधान्य असून ते उत्तर भारतात मुख्य अन्न म्हणून वापरले जाते.",
+        "src": wheatImg,
+        "tips": [
+            "Best sown in November for the Indian rabi season",
+            "Provide 4-6 critical irrigations depending on soil type",
+            "Monitor for Yellow Rust during cool, moist periods",
+            "Harvest when grains are hard and dry (straw becomes brittle)"
+        ],
+        "mr_tips": [
+            "रब्बी हंगामासाठी नोव्हेंबरमध्ये पेरणी करणे उत्तम",
+            "जमिनीच्या प्रकारानुसार ४-६ वेळा संरक्षित पाणी द्या",
+            "थंड आणि दमट हवामानात तांबेरा (Yellow Rust) रोगावर लक्ष ठेवा",
+            "जेव्हा दाणे टणक होतात आणि काड वाळते तेव्हा काढणी करा"
+        ],
+        "compData": { "water": 3, "demand": 5, "effort": "Medium", "advantage": "Global food security staple", "soil": "Loamy/Fertile Clay", "yield": "12-18 Q/Acre", "climate": "10-25°C | Winter Grain", "priceCycle": [2, 2, 2, 1, 1, 1, 2, 3, 3, 3, 2, 2], "logistics": "Farm (Dry Silos/Bags). Highly durable storage for 12+ months." }
+    },
+    {
+        "id": "25",
+        "name": "Soybean",
+        "mr_name": "सोयाबीन",
+        "Period": "Cultivation Period: 3-4 months",
+        "mr_period": "लागवड कालावधी: ३-४ महिने",
+        "description": "Soybean is a vital oilseed and protein crop used in food and industrial products. It thrives in well-drained fertile soils.",
+        "mr_description": "सोयाबीन हे एक महत्त्वाचे तेलबिया आणि प्रथिनांचे पीक असून याचा वापर अन्न आणि उद्योगांमध्ये केला जातो.",
+        "src": soybeanImg,
+        "tips": [
+            "Ensure effective inoculation for nitrogen fixation",
+            "Highly sensitive to soil acidity; maintain pH above 6.0",
+            "Avoid deep sowing; 2-3cm depth is ideal for emergence",
+            "Harvest when leaves turn yellow and pods begin to rattle"
+        ],
+        "mr_tips": [
+            "नत्र स्थिरीकरणासाठी बियाण्याला योग्य जिवाणू खताची बीजप्रक्रिया करा",
+            "हे पीक आम्लयुक्त जमिनीला संवेदनशील आहे; जमिनीचा सामू ६.० पेक्षा जास्त ठेवा",
+            "बियाण्याची खोल पेरणी टाळा; २-३ सेंमी खोलीवर पेरणी करणे योग्य",
+            "जेव्हा पाने पिवळी पडतात आणि शेंगांचा आवाज येतो तेव्हा काढणी करा"
+        ],
+        "compData": { "water": 3, "demand": 5, "effort": "Medium", "advantage": "High protein industrial value", "soil": "Clayey Loam/Black", "yield": "10-12 Q/Acre", "climate": "20-30°C | 75cm Rain", "priceCycle": [1, 1, 2, 2, 3, 3, 3, 2, 2, 1, 1, 1], "logistics": "Factory (Oil Extraction Mill) or Farm (Dry Bag Storage)." }
+    },
+    {
+        "id": "26",
+        "name": "Turmeric",
+        "mr_name": "हळद",
+        "Period": "Cultivation Period: 7-9 months",
+        "mr_period": "लागवड कालावधी: ७-९ महिने",
+        "description": "Turmeric is a high-value spice and medicinal crop, famous for its bright yellow color and bioactive compound, curcumin.",
+        "mr_description": "हळद हा एक गडद पिवळा मसाला असून तो औषधी आणि स्वयंपाकातील गुणधर्मांसाठी ओळखली जाते. भारत हा हळदीचा सर्वात मोठा उत्पादक आहे.",
+        "src": turmericImg,
+        "tips": [
+            "Plant healthy mother rhizomes with at least 1-2 sprouts",
+            "Requires heavy mulching immediately after planting",
+            "Use well-decomposed organic manure for high curcumin",
+            "Harvest 7-9 months later when the stem and leaves dry up"
+        ],
+        "mr_tips": [
+            "किमान १-२ कोंब असलेले निरोगी कंद (mother rhizomes) लागवडीसाठी वापरा",
+            "लागवडीनंतर लगेच जमिनीवर आच्छादन (Mulching) करा",
+            "जास्त कुर्कुमीनच्या (curcumin) प्रमाणासाठी सेंद्रिय खतांचा वापर करा",
+            "७-९ महिन्यांनी जेव्हा पाने आणि देय वाळतात तेव्हा काढणी करा"
+        ],
+        "compData": { "water": 4, "demand": 5, "effort": "Medium", "advantage": "Medicinal export gold", "soil": "Loamy/Well-drained", "yield": "80-100 Q/Acre (Wet)", "climate": "20-30°C | 150cm Rain", "priceCycle": [2, 1, 1, 2, 3, 3, 3, 3, 3, 2, 2, 2], "logistics": "Farm (Curing/Polishing On-site). Extremely long shelf life if dried." }
+    },
+    {
+        "id": "27",
+        "name": "Onion",
+        "mr_name": "कांदा",
+        "Period": "Cultivation Period: 3-5 months",
+        "mr_period": "लागवड कालावधी: ३-५ महिने",
+        "description": "Onion is a primary vegetable crop indispensable in global cuisines, requiring fertile soil.",
+        "mr_description": "कांदा हे जागतिक पाककृतींमध्ये अपरिहार्य असलेले मुख्य भाजीपाला पीक आहे. याला सुपीक जमिनीची गरज असते.",
+        "src": onionImg,
+        "tips": [
+            "Avoid nitrogen-excess fertilizers as it encourages top growth only",
+            "Cure the harvested bulbs in the shade for a week for storage",
+            "Stop irrigation 10-15 days before harvesting for better shelf-life",
+            "Ensure the soil is loose to allow bulbs to expand freely"
+        ],
+        "mr_tips": [
+            "नत्रयुक्त खतांचा अतिवापर टाळा, अन्यथा फक्त पातीची वाढ होते",
+            "साठवणुकीसाठी काढलेला कांदा आठवडाभर सावलीत सुकवा (Curing)",
+            "काढणीपूर्वी १०-१५ दिवस पाणी देणे बंद करा, यामुळे कांदा जास्त काळ टिकतो",
+            "कांदा पोसण्यासाठी जमीन भुसभुशीत राहील याची काळजी घ्या"
+        ],
+        "compData": { "water": 2, "demand": 5, "effort": "Medium", "advantage": "High market liquidity", "soil": "Sandy Loam/Alluvial", "yield": "8-12 Tons/Acre", "climate": "15-25°C | Mild", "priceCycle": [2, 1, 1, 1, 2, 3, 3, 2, 3, 3, 3, 2], "logistics": "Farm (Aerated dry structures - Chawls). Stores for 4-6 months." }
+    },
+    {
+        "id": "28",
+        "name": "Ginger",
+        "mr_name": "आले (अद्रक)",
+        "Period": "Cultivation Period: 8-10 months",
+        "mr_period": "लागवड कालावधी: ८-१० महिने",
+        "description": "Ginger is a perennial rhizome widely used as a spice and for its medicinal values. It thrives in warm, humid climates with partial shade.",
+        "mr_description": "आले हे एक मसाला पीक असून ते औषधी गुणधर्मांसाठी प्रसिद्ध आहे. हे उष्ण आणि दमट हवामानात चांगले वाढते.",
+        "src": gingerImg,
+        "tips": [
+            "Thrives in partial shade; excessive sun can burn the leaves",
+            "Plant in raised beds to ensure no water stagnation",
+            "Earth up the plants after 2 months to cover the new rhizomes",
+            "Harvest when the top foliage turns yellow and withers"
+        ],
+        "mr_tips": [
+            "हे पीक सावलीत चांगले येते; प्रखर सूर्यप्रकाश टाळा",
+            "पाणी साचू नये म्हणून गादीवाफ्यावर (Raised beds) लागवड करा",
+            "२ महिन्यांनंतर झाडांना भर द्या जेणेकरून नवीन आले मातीखाली झाकले जाईल",
+            "जेव्हा वरची पाने पिवळी पडून वाळतात तेव्हा काढणी करा"
+        ],
+        "compData": { "water": 4, "demand": 5, "effort": "Medium", "advantage": "High value-per-acre spice", "soil": "Laterite/Sandy Loam", "yield": "60-80 Q/Acre (Wet)", "climate": "20-30°C | Shade/Rain", "priceCycle": [2, 1, 1, 2, 3, 3, 3, 3, 3, 2, 2, 2], "logistics": "Farm (Curing in shade/pits). High shelf life if dried." }
+    },
+    {
+        "id": "29",
+        "name": "Garlic",
+        "mr_name": "लसूण",
+        "Period": "Cultivation Period: 5-6 months",
+        "mr_period": "लागवड कालावधी: ५-६ महिने",
+        "description": "Garlic is a popular spice bulb used widely in culinary traditions and traditional medicine. It is typically planted in autumn.",
+        "mr_description": "लसूण हा स्वयंपाकात आणि औषधात मोठ्या प्रमाणावर वापरला जाणारा मसाल्याचा पदार्थ आहे.",
+        "src": garlicImg,
+        "tips": [
+            "Plant individual cloves 10-15cm apart in well-drained soil",
+            "Over-watering after bulb formation leads to storage rot",
+            "Dry the harvested bulbs in a cool, ventilated area",
+            "Monitor for thrips during the early leaf-growth phase"
+        ],
+        "mr_tips": [
+            "लसणाच्या पाकळ्या १०-१५ सेंमी अंतरावर निचऱ्याच्या जमिनीत लावा",
+            "गड्डा तयार झाल्यावर जास्त पाणी देऊ नका, अन्यथा लसूण सडण्याची शक्यता असते",
+            "काढणीनंतर लसूण थंड आणि हवेशीर ठिकाणी वाळवा",
+            "पातीच्या वाढीच्या काळात फुलकिड्यांवर (Thrips) लक्ष ठेवा",
+            "जास्त उत्पादनासाठी सल्फरयुक्त खतांचा वापर करा"
+        ],
+        "compData": { "water": 3, "demand": 5, "effort": "Medium", "advantage": "High medicinal demand", "soil": "Deep Sandy Loam", "yield": "40-50 Q/Acre", "climate": "15-25°C | Winter crop", "priceCycle": [2, 2, 3, 3, 3, 2, 1, 1, 1, 2, 2, 2], "logistics": "Farm (Dry ventilated bags). Excellent shelf-life if stored at room temp." }
+    },
+    {
+        "id": "30",
+        "name": "Sunflower",
+        "mr_name": "सूर्यफूल",
+        "Period": "Cultivation Period: 3-4 months",
+        "mr_period": "लागवड कालावधी: ३-४ महिने",
+        "description": "Sunflower is an important oilseed crop, known for its vibrant yellow flower heads and protein-rich seeds.",
+        "mr_description": "सूर्यफूल हे एक महत्त्वाचे तेलबिया पीक आहे. हे त्याच्या गडद पिवळ्या फुलांसाठी आणि प्रथिनांनी समृद्ध बियाकांठी ओळखले जाते.",
+        "src": `${UNSPLASH_BASE}${SUNFLOWER_ID}?q=80&w=800&auto=format&fit=crop`,
+        "tips": [
+            "Ensure full direct sunlight for the entire tracking period",
+            "Thin out early to maintain 30cm spacing between plants",
+            "Keep the center soil moist during the flower-head formation",
+            "Harvest when the back of the flower head turns lemon-yellow"
+        ],
+        "mr_tips": [
+            "पिकाला दिवसभर भरपूर सूर्यप्रकाश मिळेल याची खात्री करा",
+            "दोन झाडांत ३० सेंमी अंतर राहील अशा प्रकारे विरळणी करा",
+            "फूल तयार होण्याच्या काळात जमििनेटमध्ये ओलावा ठेवा",
+            "जेव्हा फुलाचा मागचा भाग लिंबासारखा पिवळा होतो तेव्हा काढणी करा"
+        ],
+        "compData": { "water": 3, "description": "Resilient oilseed option", "soil": "Loamy/Fertile Clay", "yield": "8-10 Q/Acre", "climate": "20-30°C | Full Sun" }
+    },
+    {
+        "id": "31",
+        "name": "Potato",
+        "mr_name": "बटाटा",
+        "Period": "Cultivation Period: 3-4 months",
+        "mr_period": "लागवड कालावधी: ३-४ महिने",
+        "description": "Potato is one of the most widely consumed tuber vegetables globally and thrives in cool climates.",
+        "mr_description": "बटाटा हा जगातील सर्वाधिक खाल्ल्या जाणाऱ्या कंदभाज्यांपैकी एक आहे. हे पीक थंड हवामानात चांगले येते.",
+        "src": `${UNSPLASH_BASE}${POTATO_ID}?q=80&w=800&auto=format&fit=crop`,
+        "tips": [
+            "Use certified disease-free seed tubers for a healthy start",
+            "Perform 'earthing up' twice to prevent tubers from turning green",
+            "Maintain consistent soil moisture to avoid tuber cracking",
+            "Stop watering when the vines start to yellow and die back"
+        ],
+        "mr_tips": [
+            "लागवडीसाठी रोगापासून मुक्त असलेल्या प्रमाणित बियाणांचा वापर करा",
+            "बटाटे जमििनेटबाहेर येऊन हिरवे पडू नयेत म्हणून दोनदा भर (Earthing up) द्या",
+            "बटाट्यांना तडे जाऊ नयेत म्हणून जमििनेट सतत ओलावा ठेवा",
+            "जेव्हा वेली पिवळ्या पडून वाळू लागतात तेव्हा पाणी देणे बंद करा"
+        ],
+        "compData": { "water": 3, "description": "High caloric value crop", "soil": "Sandy Loam/Loose Soil", "yield": "80-100 Q/Acre", "climate": "15-20°C | Cool" }
+    },
+    {
+        "id": "32",
+        "name": "Tomato",
+        "mr_name": "टोमॅटो",
+        "Period": "Cultivation Period: 3-5 months",
+        "mr_period": "लागवड कालावधी: ३-५ महिने",
+        "description": "Tomato is an essential vegetable crop used in countless salads, sauces, and recipes.",
+        "mr_description": "टोमॅटो ही एक महत्त्वाची भाजी असून याचा वापर सॅलड आणि भाज्यांमध्ये मोठ्या प्रमाणावर केला जातो.",
+        "src": `${UNSPLASH_BASE}${TOMATO_ID}?q=80&w=800&auto=format&fit=crop`,
+        "tips": [
+            "Provide strong stakes or cages to support heavy fruit clusters",
+            "Prune 'suckers' to improve air circulation and fruit size",
+            "Water at the base to avoid leaf diseases like blight",
+            "Apply mulch to keep the soil warm and retain moisture"
+        ],
+        "mr_tips": [
+            "टोमॅटोच्या घडांना आधार देण्यासाठी काठ्यांचा वापर करा",
+            "फळांचा आकार आणि हवा खेळती राहण्यासाठी अनावश्यक फांद्यांची छाटणी करा",
+            "पानांवर रोग येऊ नयेत म्हणून झाडाच्या बुंध्याला पाणी द्या",
+            "ओलावा टिकवून ठेवण्यासाठी जमििनेटवर आच्छादन करा"
+        ],
+        "compData": { "water": 3, "description": "Daily essential, fast cash", "soil": "Well-drained Loam", "yield": "150-200 Q/Acre", "climate": "20-30°C | Sun-loving" }
+    },
+    {
+        "id": "33",
+        "name": "Chilli",
+        "mr_name": "मिरची",
+        "Period": "Cultivation Period: 4-5 months",
+        "mr_period": "लागवड कालावधी: ४-५ महिने",
+        "description": "Chilli adds heat and flavor to dishes, thriving in warm, sunlit conditions.",
+        "mr_description": "मिरची ही अन्नाला तिखटपणा आणि चव आणण्यासाठी वापरली जाते. ही उष्ण हवामानात चांगली वाढते.",
+        "src": `${UNSPLASH_BASE}${CHILLI_ID}?q=80&w=800&auto=format&fit=crop`,
+        "tips": [
+            "Requires at least 6-8 hours of direct, hot sunlight daily",
+            "Avoid excessive watering; chillies prefer slightly dry intervals",
+            "Feed with organic compost once every 3 weeks",
+            "Harvest frequently to encourage more fruit production"
+        ],
+        "mr_tips": [
+            "पिकासाठी दररोज ६-८ तास प्रखर सूर्यप्रकाशाची गरज असते",
+            "अति सिंचन टाळा; मिरच्यांना थोडे कोरडे हवामान आवडते",
+            "तिखटपणासाठी दर ३ आठवड्यांनी सेंद्रिय खतांचा डोस द्या",
+            "झाडाला जास्त फळे लागण्यासाठी तयार मिरच्यांची नियमित तोडणी करा"
+        ],
+        "compData": { "water": 3, "description": "High spice market price", "soil": "Sandy/Alluvial Loam", "yield": "40-60 Q/Acre (Green)", "climate": "20-30°C | Full Sun" }
+    },
+    {
+        "id": "34",
+        "name": "Brinjal",
+        "mr_name": "वांगी",
+        "Period": "Cultivation Period: 4-6 months",
+        "mr_period": "लागवड कालावधी: ४-६ महिने",
+        "description": "Brinjal (Eggplant) is a hardy warm-season vegetable that loves fertile soil.",
+        "mr_description": "वांगी हे उष्ण हंगामातील एक काटक भाजीपाला पीक असून ते सुपीक जमििनेट चांगले वाढते.",
+        "src": brinjalImg,
+        "tips": [
+            "Ideal for tropical climates; sensitive to even light frost",
+            "Requires frequent additions of nitrogen-rich manure",
+            "Watch for mealybugs on the undersides of the leaves",
+            "Harvest while skin is glossy; dull skin indicates over-ripeness"
+        ],
+        "mr_tips": [
+            "उष्णकटिबंधीय हवामानासाठी आदर्श; हे पीक थंडीला संवेदनशील आहे",
+            "हे पीक जमिनीतील अन्नद्रव्ये जास्त शोषते; नियमित खतांचा पुरवठा करा",
+            "पानांच्या खालच्या बाजूला पिठ्या ढेकूण (Mealybugs) असल्यास नियंत्रण करा",
+            "वांग्याची त्वचा चकचकीत असेपर्यंतच काढणी करा; निस्तेज त्वचा म्हणजे वांगी जून झाली आहेत"
+        ],
+        "compData": { "water": 3, "description": "Continuous fruiting yield", "soil": "Deep Silt Loam", "yield": "100-150 Q/Acre", "climate": "21-30°C | Tropical" }
+    },
+    {
+        "id": "35",
+        "name": "Okra",
+        "mr_name": "भेंडी",
+        "Period": "Cultivation Period: 2-3 months",
+        "mr_period": "लागवड कालावधी: २-३ महिने",
+        "description": "Okra (Lady Finger) is a popular fast-growing vegetable known for its nutritional value.",
+        "mr_description": "भेंडी ही एक लोकप्रिय भाजी असून ती तिच्या वैशिष्ट्यपूर्ण चवीसाठी आणि पोषक मूल्यांसाठी ओळखली जाते.",
+        "src": okraImg,
+        "tips": [
+            "Soak seeds overnight to speed up the slow germination rate",
+            "Thrives in hot, humid weather; grows fast during the monsoon",
+            "Check leaves daily for caterpillars and Jassid pests",
+            "Harvest pods every 2 days when they are 3-4 inches long"
+        ],
+        "mr_tips": [
+            "लवकर उगवणीसाठी बियाणे रात्रभर पाण्यात भिजवून ठेवा",
+            "उष्ण आणि दमट हवामानात, विशेषतः पावसाळ्यात वेगाने वाढते",
+            "पानांवर अळी किंवा तुडतुड्यांचा प्रादुर्भाव असल्यास वेळीच नियंत्रण करा",
+            "दर २ दिवसांनी ३-४ इंच लांब कोवळ्या भेंड्यांची तोडणी करा"
+        ],
+        "compData": { "water": 3, "description": "Very short production cycle", "soil": "Sandy Loam/Alluvial", "yield": "30-50 Q/Acre", "climate": "25-35°C | Humid/Hot" }
+    },
+    {
+        "id": "36",
+        "name": "Cabbage",
+        "mr_name": "कोबी",
+        "Period": "Cultivation Period: 3-4 months",
+        "mr_period": "लागवड कालावधी: ३-४ महिने",
+        "description": "Cabbage is a cool-season vegetable rich in nutrients, forming a dense head.",
+        "mr_description": "कोबी ही हिवाळ्यातील पोषक आणि फायबरयुक्त भाजी असून त्याचा घट्ट गड्डा तयार होतो.",
+        "src": cabbageImg,
+        "tips": [
+            "Needs firm, cool soil; avoid planting during peak summer heat",
+            "Protect developing heads from intense sun to prevent yellowing",
+            "Monitor for Diamondback Moth larvae on the outer leaves",
+            "Harvest when the head feels firm and solid to the touch"
+        ],
+        "mr_tips": [
+            "थंड जमििनेट लागवड करा; उन्हाळ्यातील कडक ऊन टाळा",
+            "गड्डा पिवळा पडू नये म्हणून प्रखर सूर्यप्रकाशापासून संरक्षण करा",
+            "बाहेरच्या पानांवर पडणाऱ्या अळीवर (Diamondback Moth) लक्ष ठेवा",
+            "जेव्हा गड्डा हाताला घट्ट लागतो तेव्हाच काढणी करा"
+        ],
+        "compData": { "water": 2, "description": "Excellent storage vegetable", "soil": "Moist Loamy Soil", "yield": "80-120 Q/Acre", "climate": "15-20°C | Winter Veg" }
+    },
+    {
+        "id": "37",
+        "name": "Cauliflower",
+        "mr_name": "फ्लॉवर",
+        "Period": "Cultivation Period: 3-5 months",
+        "mr_period": "लागवड कालावधी: ३-५ महिने",
+        "description": "Cauliflower is a versatile white-headed vegetable widely used in cooked dishes.",
+        "mr_description": "फ्लॉवर ही एक बहुउद्देशीय पांढऱ्या रंगाची भाजी असून याचा वापर विविध पदार्थांमध्ये केला जातो.",
+        "src": `${UNSPLASH_BASE}${CAULIFLOWER_ID}?q=80&w=800&auto=format&fit=crop`,
+        "tips": [
+            "Tie outer leaves over the curd to keep it white and tender",
+            "Very sensitive to Boron deficiency; use micronutrient sprays",
+            "Keep soil consistently moist to prevent 'buttoning'",
+            "Harvest while the curd is still compact"
+        ],
+        "mr_tips": [
+            "गड्डा पांढरा आणि कोवळा राहण्यासाठी बाहेरच्या पानांनी तो झाकून ठेवा",
+            "हे पीक बोरॉनच्या कमतरतेला संवेदनशील आहे; सूक्ष्म अन्नद्रव्यांची फवारणी करा",
+            "जमििनेट सतत ओलावा ठेवा जेणेकरून गड्याची वाढ खुंटणार नाही",
+            "जेव्हा गड्डा घट्ट असतो तेव्हाच तोडणी करा"
+        ],
+        "compData": { "water": 3, "description": "High culinary popularity", "soil": "Loamy/Fertile Clay", "yield": "60-80 Q/Acre", "climate": "15-25°C | Frost-free" }
+    },
+    {
+        "id": "38",
+        "name": "Green Peas",
+        "mr_name": "मटार",
+        "Period": "Cultivation Period: 2-3 months",
+        "mr_period": "लागवड कालावधी: २-३ महिने",
+        "description": "Green Peas are nutritious winter vegetables cultivated for their sweet seeds.",
+        "mr_description": "मटार ही हिवाळ्यातील पोषक भाजी असून ती तिच्या हिरव्या दाण्यांसाठी ओळखली जाते.",
+        "src": `${UNSPLASH_BASE}${PEAS_ID}?q=80&w=800&auto=format&fit=crop`,
+        "tips": [
+            "Sow in the cool rabi season for the sweetest, most tender peas",
+            "Requires trellis or mesh support for the climbing tendrils",
+            "Inoculation with Rhizobium can increase the yield",
+            "Harvest frequently to keep the plant in production mode"
+        ],
+        "mr_tips": [
+            "गोड आणि कोवळ्या मटारसाठी रब्बी (हिवाळा) हंगामात पेरणी करा",
+            "वेलींना वर चढण्यासाठी काठ्या किंवा जाळीचा आधार द्या",
+            "उत्पादनात वाढ करण्यासाठी रायझोबियम कल्चरची बीजप्रक्रिया करा",
+            "सतत उत्पादनासाठी तयार शेंगांची वेळेवर तोडणी करा"
+        ],
+        "compData": { "water": 3, "description": "Enriches soil for next crop", "soil": "Alluvial/Sandy Loam", "yield": "30-50 Q/Acre (Pods)", "climate": "10-20°C | Cool Winter" }
+    },
+    {
+        "id": "39",
+        "name": "Carrot",
+        "mr_name": "गाजर",
+        "Period": "Cultivation Period: 3-4 months",
+        "mr_period": "लागवड कालावधी: ३-४ महिने",
+        "description": "Carrot is a root vegetable and a primary source of Beta Carotene.",
+        "mr_description": "गाजर ही एक कंदभाजी असून ती 'अ' जीवनसत्वाचा उत्तम स्रोत आहे.",
+        "src": `${UNSPLASH_BASE}${CARROT_ID}?q=80&w=800&auto=format&fit=crop`,
+        "tips": [
+            "Needs loose, sandy soil to prevent root forking",
+            "Thin seedlings to 2-3 inches apart for thick roots",
+            "Water deeply but avoid soil surface crusting",
+            "Harvest when carrot tops appear at soil level"
+        ],
+        "mr_tips": [
+            "गाजराची वाढ नीट होण्यासाठी जमीन भुसभुशीत आणि दगडमुक्त असावी",
+            "सरळ आणि जाड गाजरांसाठी दोन रोपांत २-३ इंच अंतर ठेवा",
+            "जमििनेटला खोलवर पाणी द्या पण वरचा थर कडक होणार नाही याची काळजी घ्या",
+            "जेव्हा गाजराचा वरचा भाग जमििनेटबाहेर दिसू लागतो तेव्हा काढणी करा"
+        ],
+        "compData": { "water": 3, "description": "Nutrient export potential", "soil": "Deep Sandy Loam", "yield": "100-150 Q/Acre", "climate": "15-20°C | Cool" }
+    },
+    {
+        "id": "40",
+        "name": "Radish",
+        "mr_name": "मुळा",
+        "Period": "Cultivation Period: 1-2 months",
+        "mr_period": "लागवड कालावधी: १-२ महिने",
+        "description": "Radish is a fast-growing root vegetable used in salads.",
+        "mr_description": "मुळा ही वेगाने वाढणारी कंदभाजी आहे जी कोशिंबीरमध्ये वापरली जाते.",
+        "src": `${UNSPLASH_BASE}${RADISH_ID}?q=80&w=800&auto=format&fit=crop`,
+        "tips": [
+            "Fastest growing crop; harvest early for tender taste",
+            "Keep soil moist to prevent roots from turning woody",
+            "Needs loose soil for straight root growth",
+            "Harvest before the plant starts flowering"
+        ],
+        "mr_tips": [
+            "सर्वात वेगाने वाढणारे पीक; कोवळ्या चवीसाठी लवकर काढणी करा",
+            "मुळा कडक होऊ नये म्हणून जमििनेट ओलावा ठेवा",
+            "सरळ वाढीसाठी भुसभुशीत जमिनीची गरज असते",
+            "झाडाला फुले येण्यापूर्वीच मुळ्याची काढणी करा"
+        ],
+        "compData": { "water": 2, "description": "Rapid turnaround crop", "soil": "Sandy Loam", "yield": "40-60 Q/Acre", "climate": "15-25°C" }
+    },
+    {
+        "id": "41",
+        "name": "Spinach",
+        "mr_name": "पालक",
+        "Period": "Cultivation Period: 1.5-2 months",
+        "mr_period": "लागवड कालावधी: १.५-२ महिने",
+        "description": "Spinach is a leafy green vegetable with high iron and nutritional value.",
+        "mr_description": "पालक ही लोह आणि जीवनसत्त्वांनी भरपूर असलेली पालेभाजी आहे.",
+        "src": `${UNSPLASH_BASE}${SPINACH_ID}?q=80&w=800&auto=format&fit=crop`,
+        "tips": [
+            "Maintain consistent soil moisture; prefers cool conditions",
+            "Apply well-decomposed organic manure for lush green leaves",
+            "Spray neem oil to control aphids and leaf miners",
+            "Harvest frequently to encourage new growth"
+        ],
+        "mr_tips": [
+            "जमििनेट सतत ओलावा ठेवा; पालकासाठी थंड हवामान पोषक असते",
+            "हिरव्या लुसलुशीत पानांसाठी चांगल्या कुजलेल्या शेणखताचा वापर करा",
+            "मावा आणि पानावरील अळी रोखण्यासाठी कडुलिंबाच्या अर्काची फवारणी करा",
+            "जास्त उत्पादनासाठी तयार पानांची नियमित तोडणी करा"
+        ],
+        "compData": { "water": 3, "description": "Very fast ROI", "soil": "Rich Sandy Loam", "yield": "4-6 Tons/Acre", "climate": "15-25°C | Cool" }
+    },
+    {
+        "id": "42",
+        "name": "Cucumber",
+        "mr_name": "काकडी",
+        "Period": "Cultivation Period: 2-3 months",
+        "mr_period": "लागवड कालावधी: २-३ महिने",
+        "description": "Cucumber is a widely cultivated creeping vine plant, high in water content.",
+        "mr_description": "काकडी हे वेलवर्गीय फळभाजी पीक असून ते उन्हाळ्यात अत्यंत थंड आणि आरोग्यदायी असते.",
+        "src": `${UNSPLASH_BASE}${CUCUMBER_ID}?q=80&w=800&auto=format&fit=crop`,
+        "tips": [
+            "Water regularly to prevent the fruit from turning bitter",
+            "Use trellis or staking to keep fruits clean",
+            "Pinch off the main stem to encourage side branches",
+            "Harvest when skin is dark green"
+        ],
+        "mr_tips": [
+            "काकडी कडू होऊ नये म्हणून नियमित पाणी द्या",
+            "काकड्या स्वच्छ राहाव्यात म्हणून मांडवाचा वापर करा",
+            "वेलीला जास्त फांद्या फुटण्यासाठी मुख्य शेंडा खुडा",
+            "जेव्हा साल गडद हिरवी असते तेव्हाच काढणी करा"
+        ],
+        "compData": { "water": 3, "description": "High hydration crop", "soil": "Deep Fertile Loam", "yield": "80-100 Q/Acre", "climate": "25-30°C | Sun" }
+    },
+    {
+        "id": "43",
+        "name": "Mustard",
+        "mr_name": "मोहरी",
+        "Period": "Cultivation Period: 3-4 months",
+        "mr_period": "लागवड कालावधी: ३-४ महिने",
+        "description": "Mustard is a cool-season oilseed crop used for oil, spices, and as a green vegetable.",
+        "mr_description": "मोहरी हे हिवाळ्यातील तेलबिया पीक आहे, ज्याचा वापर तेल, मसाले आणि हिरव्या भाजीसाठी केला जातो.",
+        "src": `${UNSPLASH_BASE}${MUSTARD_ID}?q=80&w=800&auto=format&fit=crop`,
+        "requirements": { "min_temp": 15, "max_temp": 25, "min_rain": 400, "max_rain": 600, "n": 60, "p": 30, "k": 30 },
+        "mr_tips": ["चांगल्या तेल उत्पादनासाठी थंड हवामानाची गरज असते", "हवा खेळती राहण्यासाठी दोन रोपांत योग्य अंतर ठेवा", "फुलोऱ्याच्या काळात मावा रोगावर लक्ष ठेवा", "जेव्हा शेंगा सोनेरी रंगाच्या होतात तेव्हा काढणी करा"],
+        "compData": { "water": 1, "soil": "Sandy Loam/Alluvial", "climate": "Cool/Dry", "priceCycle": [2, 2, 2, 3, 3, 2, 2, 2, 2, 2, 3, 3] }
+    },
+    {
+        "id": "62",
+        "name": "Ragi",
+        "mr_name": "नाचणी (नागली)",
+        "Period": "Cultivation Period: 4 months",
+        "mr_period": "लागवड कालावधी: ४ महिने",
+        "description": "Ragi is a highly nutritious cereal, extremely rich in calcium and iron, ideal for arid regions.",
+        "mr_description": "नाचणी हे प्रथिनांनी आणि कॅल्शियमने समृद्ध असलेले धान्य आहे.",
+        "src": "https://images.unsplash.com/photo-1600188769045-bc6026ba8cd4?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 20, "max_temp": 35, "min_rain": 500, "max_rain": 1000, "n": 60, "p": 30, "k": 30 },
+        "mr_tips": ["हे पीक हलक्या जमिनीतही चांगले येते", "पाणी साचू देऊ नका", "लवकर काढणी करा"],
+        "compData": { "water": 1, "soil": "Red/Sandy", "climate": "Hot/Dry", "priceCycle": [2, 2, 2, 3, 3, 2, 2, 2, 2, 2, 3, 3] }
+    },
+    {
+        "id": "63",
+        "name": "Guava",
+        "mr_name": "पेरू",
+        "Period": "Cultivation Period: 2-3 years",
+        "mr_period": "लागवड कालावधी: २-३ वर्षे",
+        "description": "Guava is a hardy tropical fruit, rich in Vitamin C and fiber.",
+        "mr_description": "पेरू हे क जीवनसत्त्वाने भरपूर असलेले फळ आहे.",
+        "src": "https://images.unsplash.com/photo-1536511110481-424a56a68393?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 15, "max_temp": 35, "min_rain": 600, "max_rain": 1500, "n": 80, "p": 40, "k": 60 },
+        "mr_tips": ["फळे मोठी होण्यासाठी छाटणी आवश्यक आहे", "हिवाळ्यात उत्तम फळे मिळतात"],
+        "compData": { "water": 2, "soil": "Alluvial/Loamy", "climate": "Tropical/Subtropical", "priceCycle": [2, 3, 3, 2, 2, 1, 1, 1, 2, 3, 3, 2] }
+    },
+    {
+        "id": "64",
+        "name": "Broccoli",
+        "mr_name": "ब्रोकोली",
+        "Period": "Cultivation Period: 3 months",
+        "mr_period": "लागवड कालावधी: ३ महिने",
+        "description": "Broccoli is a nutrient-dense green vegetable that thrives in cool weather.",
+        "mr_description": "ब्रोकोली ही हिवाळ्यातील पोषक पालेभाजी आहे.",
+        "src": "https://images.unsplash.com/photo-1453227588063-bb302b62f50b?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 10, "max_temp": 25, "min_rain": 400, "max_rain": 800, "n": 100, "p": 60, "k": 50 },
+        "compData": { "water": 3, "soil": "Rich Loamy", "climate": "Cool", "priceCycle": [3, 3, 2, 1, 1, 1, 1, 2, 2, 3, 3, 3] }
+    },
+    {
+        "id": "65",
+        "name": "Jackfruit",
+        "mr_name": "फणस",
+        "Period": "Cultivation Period: 5-8 years",
+        "mr_period": "लागवड कालावधी: ५-८ वर्षे",
+        "description": "Jackfruit is the largest tree-borne fruit, known for its sweet flesh and seeds.",
+        "mr_description": "फणस हे सर्वात मोठे झाडावर लागणारे फळ आहे.",
+        "src": "https://images.unsplash.com/photo-1582515073490-39981397c445?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 25, "max_temp": 38, "min_rain": 1500, "max_rain": 3000, "n": 100, "p": 50, "k": 100 },
+        "compData": { "water": 4, "soil": "Deep Alluvial", "climate": "Hot/Humid", "priceCycle": [1, 1, 2, 3, 3, 3, 2, 1, 1, 1, 1, 1] }
+    },
+    {
+        "id": "66",
+        "name": "Beetroot",
+        "mr_name": "बीट",
+        "Period": "Cultivation Period: 2-3 months",
+        "mr_period": "लागवड कालावधी: २-३ महिने",
+        "description": "Beetroot is a cool-season root vegetable prized for its edible roots and greens.",
+        "mr_description": "बीट ही आरोग्यासाठी उत्तम असलेली कंदभाजी आहे.",
+        "src": "https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 15, "max_temp": 28, "min_rain": 300, "max_rain": 600, "n": 80, "p": 60, "k": 80 },
+        "compData": { "water": 2, "soil": "Sandy/Loamy", "climate": "Mild/Cool", "priceCycle": [2, 2, 3, 3, 2, 1, 1, 1, 1, 2, 3, 3] }
+    },
+    {
+        "id": "67",
+        "name": "Aloe Vera",
+        "mr_name": "कोरफड",
+        "Period": "Cultivation Period: 8-12 months",
+        "mr_period": "लागवड कालावधी: ८-१२ महिने",
+        "description": "Aloe Vera is a medicinal succulent plant famous for its gel-like sap used in cosmetics and health products.",
+        "mr_description": "कोरफड ही अत्यंत औषधी वनस्पती असून ती कमी पाण्यातही येते.",
+        "src": "https://images.unsplash.com/photo-1596541223130-5d31a73fb6c6?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 20, "max_temp": 45, "min_rain": 100, "max_rain": 500, "n": 20, "p": 20, "k": 20 },
+        "compData": { "water": 1, "soil": "Sandy/Dry", "climate": "Hot/Arid", "priceCycle": [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3] }
+    },
+    {
+        "id": "68",
+        "name": "Dragon Fruit",
+        "mr_name": "ड्रॅगन फ्रूट",
+        "Period": "Cultivation Period: 1-2 years",
+        "mr_period": "लागवड कालावधी: १-२ वर्षे",
+        "description": "Dragon Fruit is a tropical cactus fruit, gaining popularity for its unique look and health benefits.",
+        "mr_description": "ड्रॅगन फ्रूट हे कॅक्टसवर्गीय फळ असून ते सध्या खूप लोकप्रिय होत आहे.",
+        "src": "https://images.unsplash.com/photo-1527324688101-08d3a984c041?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 20, "max_temp": 38, "min_rain": 500, "max_rain": 1200, "n": 60, "p": 40, "k": 60 },
+        "compData": { "water": 1, "soil": "Sandy/Well-drained", "climate": "Hot/Dry", "priceCycle": [1, 1, 1, 1, 2, 3, 3, 3, 3, 2, 1, 1] }
+    },
+    {
+        "id": "69",
+        "name": "Drumstick",
+        "mr_name": "शेवगा (मोरिंगा)",
+        "Period": "Cultivation Period: 6-8 months",
+        "mr_period": "लागवड कालावधी: ६-८ महिने",
+        "description": "Drumstick (Moringa) is a superfood tree, providing nutrient-rich leaves and pods.",
+        "mr_description": "शेवगा हे अत्यंत पोषक पीक असून याची पाने आणि शेंगा दोन्ही खाल्ले जातात.",
+        "src": "https://images.unsplash.com/photo-1528183429752-a97d0bf99b5a?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 25, "max_temp": 40, "min_rain": 250, "max_rain": 1500, "n": 40, "p": 40, "k": 40 },
+        "compData": { "water": 1, "soil": "Alluvial/Lateirte", "climate": "Hot/Tropical", "priceCycle": [2, 3, 3, 2, 2, 2, 2, 2, 2, 3, 3, 2] }
+    },
+    {
+        "id": "70",
+        "name": "Strawberry",
+        "mr_name": "स्ट्रॉबेरी",
+        "Period": "Cultivation Period: 3-4 months",
+        "mr_period": "लागवड कालावधी: ३-४ महिने",
+        "description": "Strawberry is a temperate fruit that requires cool nights and sunny days.",
+        "mr_description": "स्ट्रॉबेरी हे महाबळेश्वर सारख्या थंड हवेच्या ठिकाणी येणारे लोकप्रिय फळ आहे.",
+        "src": "https://images.unsplash.com/photo-1464960351845-d3ec27b16bd2?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 10, "max_temp": 25, "min_rain": 500, "max_rain": 1000, "n": 90, "p": 60, "k": 100 },
+        "compData": { "water": 3, "soil": "Humus Rich/Loamy", "climate": "Cool/Frost-free", "priceCycle": [3, 3, 2, 1, 1, 1, 1, 1, 1, 1, 2, 3] }
+    },
+    {
+        "id": "71",
+        "name": "Cumin",
+        "mr_name": "जिरे",
+        "Period": "Cultivation Period: 4 months",
+        "mr_period": "लागवड कालावधी: ४ महिने",
+        "description": "Cumin is a vital spice that requires a cool climate and low humidity during its growth phase.",
+        "mr_description": "जिरे हे मसाल्याचे महत्त्वाचे पीक असून याला कोरडे हवामान लागते.",
+        "src": "https://images.unsplash.com/photo-1589133405386-4f404ca84803?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 20, "max_temp": 30, "min_rain": 100, "max_rain": 400, "n": 40, "p": 20, "k": 20 },
+        "compData": { "water": 1, "soil": "Sandy Loam/Well-drained", "climate": "Dry/Cool Winter", "priceCycle": [2, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2] }
+    },
+    {
+        "id": "72",
+        "name": "Pineapple",
+        "mr_name": "अननस",
+        "Period": "Cultivation Period: 12-18 months",
+        "mr_period": "लागवड कालावधी: १२-१८ महिने",
+        "description": "Pineapple is a tropical fruit that grows well in acidic soils and humid environments.",
+        "mr_description": "अननस हे उष्णकटिबंधीय फळ असून याला निचऱ्याची जमीन लागते.",
+        "src": "https://images.unsplash.com/photo-1550258987-190a2d41a8ba?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 20, "max_temp": 35, "min_rain": 1000, "max_rain": 2500, "n": 80, "p": 40, "k": 80 },
+        "compData": { "water": 3, "soil": "Sandy/Acidic", "climate": "Humid/Hot", "priceCycle": [2, 2, 2, 2, 3, 3, 3, 2, 2, 2, 2, 2] }
+    },
+    {
+        "id": "73",
+        "name": "Rose",
+        "mr_name": "गुलाब",
+        "Period": "Cultivation Period: Year-round",
+        "mr_period": "लागवड कालावधी: वर्षभर",
+        "description": "Roses are the most popular ornamental flowers, grown for their beauty and fragrance.",
+        "mr_description": "गुलाब हे स्वांदर्पपूर्ण आणि सुगंधी फुलांपैकी एक आहे.",
+        "src": "https://images.unsplash.com/photo-1496062031456-07b8f162a322?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 15, "max_temp": 30, "min_rain": 500, "max_rain": 1200, "n": 100, "p": 80, "k": 100 },
+        "compData": { "water": 4, "soil": "Rich Clayey/Loamy", "climate": "Mild/Sunny", "priceCycle": [3, 3, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3] }
+    },
+    {
+        "id": "74",
+        "name": "Almond",
+        "mr_name": "बदाम",
+        "Period": "Cultivation Period: 3-5 years",
+        "mr_period": "लागवड कालावधी: ३-५ वर्षे",
+        "description": "Almonds are high-value nuts grown in temperate regions with dry summers.",
+        "mr_description": "बदाम हे एक कोरड्या हवामानातील उच्च मूल्याचे पीक आहे.",
+        "src": "https://images.unsplash.com/photo-1508817628294-5a453fa0b8fb?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 10, "max_temp": 32, "min_rain": 300, "max_rain": 800, "n": 120, "p": 60, "k": 100 },
+        "compData": { "water": 2, "soil": "Deep Sandy Loam", "climate": "Dry/Mild", "priceCycle": [2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 2, 2] }
+    },
+    {
+        "id": "75",
+        "name": "Cashew",
+        "mr_name": "काजू",
+        "Period": "Cultivation Period: 3-5 years",
+        "mr_period": "लागवड कालावधी: ३-५ वर्षे",
+        "description": "Cashew is a tropical nut crop that thrives in coastal sandy soils and low rainfall.",
+        "mr_description": "काजू हे कोकण पट्ट्यातील एक प्रमुख नगदी पीक आहे.",
+        "src": "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 20, "max_temp": 40, "min_rain": 500, "max_rain": 2000, "n": 60, "p": 40, "k": 40 },
+        "compData": { "water": 1, "soil": "Sandy/Laterite", "climate": "Hot/Coastal", "priceCycle": [2, 2, 3, 3, 3, 2, 1, 1, 1, 2, 2, 2] }
+    },
+    {
+        "id": "76",
+        "name": "Pumpkin",
+        "mr_name": "भोपळा (लाल भोपळा)",
+        "Period": "Cultivation Period: 3-4 months",
+        "mr_period": "लागवड कालावधी: ३-४ महिने",
+        "description": "Pumpkin is a versatile gourd, rich in antioxidants and vitamins.",
+        "mr_description": "लाल भोपळा हे वर्षभर मिळणारे आणि पोषक पीक आहे.",
+        "src": "https://images.unsplash.com/photo-1506867076597-8171d5362a96?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 20, "max_temp": 35, "min_rain": 600, "max_rain": 1200, "n": 60, "p": 60, "k": 60 },
+        "compData": { "water": 3, "soil": "Fertile Loam", "climate": "Hot/Summer", "priceCycle": [1, 1, 1, 1, 1, 2, 3, 3, 3, 2, 1, 1] }
+    },
+    {
+        "id": "77",
+        "name": "Capsicum",
+        "mr_name": "ढोबळी मिरची (शिमला मिरची)",
+        "Period": "Cultivation Period: 3-4 months",
+        "mr_period": "लागवड कालावधी: ३-४ महिने",
+        "description": "Capsicum or bell peppers are high-value vegetables grown in open fields or greenhouses.",
+        "mr_description": "शिमला मिरची किंवा कलर कॅप्सिकम ही सध्या खूप नफा देणारी पीक आहेत.",
+        "src": "https://images.unsplash.com/photo-1563502315552-c6b97ce0a660?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 20, "max_temp": 30, "min_rain": 600, "max_rain": 1200, "n": 100, "p": 80, "k": 80 },
+        "compData": { "water": 3, "soil": "Rich Silt Loam", "climate": "Mild/Tropical", "priceCycle": [3, 3, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3] }
+    },
+    {
+        "id": "78",
+        "name": "Sweet Potato",
+        "mr_name": "रताळे",
+        "Period": "Cultivation Period: 4 months",
+        "mr_period": "लागवड कालावधी: ४ महिने",
+        "description": "Sweet potatoes are energy-rich tubers that grow well in hot regions with decent rainfall.",
+        "mr_description": "रताळे हे ऊर्जेचा उत्तम स्रोत असून ते कंदवर्गीय फळभाजी आहे.",
+        "src": "https://images.unsplash.com/photo-1596097635121-14b63b7a0c19?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 24, "max_temp": 35, "min_rain": 750, "max_rain": 1250, "n": 60, "p": 40, "k": 80 },
+        "compData": { "water": 3, "soil": "Sandy/Loose Soil", "climate": "Hot/Humid", "priceCycle": [2, 2, 1, 1, 1, 1, 2, 3, 3, 3, 2, 2] }
+    },
+    {
+        "id": "79",
+        "name": "Bitter Gourd",
+        "mr_name": "कारले",
+        "Period": "Cultivation Period: 3-4 months",
+        "mr_period": "लागवड कालावधी: ३-४ महिने",
+        "description": "Bitter gourd is a medicinal vegetable widely grown in Asia, known for its bitter taste.",
+        "mr_description": "कारले हे आरोग्यासाठी अत्यंत कडू पण गुणकारी पीक आहे.",
+        "src": "https://images.unsplash.com/photo-1583689464402-b2654911910d?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 25, "max_temp": 38, "min_rain": 500, "max_rain": 1500, "n": 60, "p": 40, "k": 40 },
+        "compData": { "water": 3, "soil": "Sandy Loam/Mandra", "climate": "Hot/Humid", "priceCycle": [2, 3, 3, 3, 2, 1, 1, 1, 1, 2, 3, 3] }
+    },
+    {
+        "id": "80",
+        "name": "Bottle Gourd",
+        "mr_name": "दुधी भोपळा",
+        "Period": "Cultivation Period: 3 months",
+        "mr_period": "लागवड कालावधी: ३ महिने",
+        "description": "Bottle gourd is a cooling vegetable crop with high water content, ideal for summer.",
+        "mr_description": "दुधी भोपळा हे उन्हाळ्यातील अत्यंत थंड आणि रसाळ पीक आहे.",
+        "src": "https://images.unsplash.com/photo-1594968973184-9140fa30776d?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 20, "max_temp": 35, "min_rain": 500, "max_rain": 1000, "n": 40, "p": 40, "k": 40 },
+        "compData": { "water": 3, "soil": "Silt Loam/Alluvial", "climate": "Mild/Summer", "priceCycle": [1, 1, 1, 2, 3, 3, 3, 2, 1, 1, 1, 1] }
+    },
+    {
+        "id": "81",
+        "name": "Lotus",
+        "mr_name": "कमळ",
+        "Period": "Cultivation Period: 6 months",
+        "mr_period": "लागवड कालावधी: ६ महिने",
+        "description": "Lotus is a sacred aquatic flower, whose roots and seeds are also edible and nutritious.",
+        "mr_description": "कमळ हे भारतीय संस्कृतीतील महत्त्वाचे फूल असून याचे कंदही खाल्ले जातात.",
+        "src": "https://images.unsplash.com/photo-1433162653888-a571db5ecd2a?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 20, "max_temp": 35, "min_rain": 1000, "max_rain": 2000, "n": 40, "p": 40, "k": 20 },
+        "compData": { "water": 5, "soil": "Muddy/Aquatic", "climate": "Tropical", "priceCycle": [3, 3, 3, 2, 2, 2, 2, 2, 2, 3, 3, 3] }
+    },
+    {
+        "id": "82",
+        "name": "Sapota",
+        "mr_name": "चिकू",
+        "Period": "Cultivation Period: 3-5 years",
+        "mr_period": "लागवड कालावधी: ३-५ वर्षे",
+        "description": "Sapota (Chiku) is a tropical evergreen fruit tree that gives fruit year-round.",
+        "mr_description": "चिकू हे डहाणूसारख्या किनारपट्टी भागात वर्षभर उत्पादन देणारे फळ आहे.",
+        "src": "https://images.unsplash.com/photo-1621464407335-50269f8863f6?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 20, "max_temp": 38, "min_rain": 1000, "max_rain": 2500, "n": 80, "p": 40, "k": 60 },
+        "compData": { "water": 3, "soil": "Alluvial/Sandy Loam", "climate": "Hot/Humid", "priceCycle": [3, 3, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3] }
+    },
+    {
+        "id": "83",
+        "name": "Tamarind",
+        "mr_name": "चिंच",
+        "Period": "Cultivation Period: 10-15 years",
+        "mr_period": "लागवड कालावधी: १०-१५ वर्षे",
+        "description": "Tamarind is a long-lived tree producing sour-sweet pods, resistant to droughts.",
+        "mr_description": "चिंच हे अत्यंत काटक आणि दीर्घायुष्य असलेले झाड असून ते कोरड्या हवामानातही येते.",
+        "src": "https://images.unsplash.com/photo-1634125633642-125633642a8d?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 25, "max_temp": 45, "min_rain": 300, "max_rain": 1000, "n": 40, "p": 20, "k": 40 },
+        "compData": { "water": 1, "soil": "Any Soil/Black", "climate": "Arid/Tropical", "priceCycle": [2, 2, 3, 3, 3, 2, 2, 2, 2, 1, 1, 2] }
+    },
+    {
+        "id": "84",
+        "name": "Custard Apple",
+        "mr_name": "सीताफळ",
+        "Period": "Cultivation Period: 3-4 years",
+        "mr_period": "लागवड कालावधी: ३-४ वर्षे",
+        "description": "Custard Apple is a sweet, creamy fruit that grows well on hilly slopes and dry zones.",
+        "mr_description": "सीताफळ हे डोंगराळ भागात आणि कोरड्या हवामानात येणारे अत्यंत गोड फळ आहे.",
+        "src": "https://images.unsplash.com/photo-1628042466033-d8cbf643f5f2?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 20, "max_temp": 35, "min_rain": 400, "max_rain": 800, "n": 40, "p": 40, "k": 40 },
+        "compData": { "water": 1, "soil": "Rocky/Sandy Loam", "climate": "Dry/Subtropical", "priceCycle": [1, 1, 1, 1, 1, 1, 2, 3, 3, 3, 2, 1] }
+    },
+    {
+        "id": "85",
+        "name": "Walnut",
+        "mr_name": "अक्रोड",
+        "Period": "Cultivation Period: 7-10 years",
+        "mr_period": "लागवड कालावधी: ७-१० वर्षे",
+        "description": "Walnut is a premium nut crop requiring temperate climates and deep, well-drained soils.",
+        "mr_description": "अक्रोड हे थंड प्रदेशातील एक अत्यंत मौल्यवान कोरडा मेवा पीक आहे.",
+        "src": "https://images.unsplash.com/photo-1585244778423-ca6cca298317?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 5, "max_temp": 25, "min_rain": 1000, "max_rain": 1500, "n": 100, "p": 60, "k": 80 },
+        "compData": { "water": 4, "soil": "Deep Fertile Loam", "climate": "Temperate/Cold", "priceCycle": [2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 2, 2] }
+    },
+    {
+        "id": "86",
+        "name": "Saffron",
+        "mr_name": "केशर",
+        "Period": "Cultivation Period: 2-3 months",
+        "mr_period": "लागवड कालावधी: २-३ महिने",
+        "description": "Saffron is the world's most expensive spice, harvested from crocus flowers in Kashmir.",
+        "mr_description": "केशर हे जगातील सर्वात महागडे मसाला पीक आहे जे काश्मीरमध्ये पिकवले जाते.",
+        "src": "https://images.unsplash.com/photo-1508817628294-5a453fa0b8fb?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": -5, "max_temp": 20, "min_rain": 400, "max_rain": 800, "n": 80, "p": 40, "k": 60 },
+        "compData": { "water": 2, "soil": "Rich Clayey/Calcareous", "climate": "Cold/Alpine", "priceCycle": [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3] }
+    },
+    {
+        "id": "87",
+        "name": "Ajwain",
+        "mr_name": "ओवा",
+        "Period": "Cultivation Period: 5 months",
+        "mr_period": "लागवड कालावधी: ५ महिने",
+        "description": "Ajwain (Carom seeds) is a medicinal spice crop, tolerant to heat and low moisture.",
+        "mr_description": "ओवा हे त्याच्या पचनशक्ती आणि औषधी गुणधर्मांसाठी ओळखले जाणारे पीक आहे.",
+        "src": "https://images.unsplash.com/photo-1626202378303-366f0dc0f895?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 20, "max_temp": 35, "min_rain": 200, "max_rain": 500, "n": 40, "p": 40, "k": 20 },
+        "compData": { "water": 1, "soil": "Sandy Loam", "climate": "Hot/Dry", "priceCycle": [2, 2, 3, 3, 3, 2, 2, 2, 2, 2, 3, 3] }
+    },
+    {
+        "id": "88",
+        "name": "Litchi",
+        "mr_name": "लिची",
+        "Period": "Cultivation Period: 5-7 years",
+        "mr_period": "लागवड कालावधी: ५-७ वर्षे",
+        "description": "Litchi is a sensitive fruit requiring specific conditions of moist heat and humid weather.",
+        "mr_description": "लिची हे एक रसाळ आणि गोड फळ असून याला विशिष्ट हवामानाची गरज असते.",
+        "src": "https://images.unsplash.com/photo-1543362145-296210f972b2?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 20, "max_temp": 30, "min_rain": 1200, "max_rain": 2000, "n": 90, "p": 50, "k": 90 },
+        "compData": { "water": 4, "soil": "Deep Silt Loam", "climate": "Humid/Subtropical", "priceCycle": [1, 1, 1, 2, 3, 3, 2, 1, 1, 1, 1, 1] }
+    },
+    {
+        "id": "89",
+        "name": "Pistachio",
+        "mr_name": "पिस्ता",
+        "Period": "Cultivation Period: 7-10 years",
+        "mr_period": "लागवड कालावधी: ७-१० वर्षे",
+        "description": "Pistachios are resilient nuts that thrive in high-heat desert environments.",
+        "mr_description": "पिस्ता हे वाळवंटी भागातील पीक असून याला प्रखर ऊन लागते.",
+        "src": "https://images.unsplash.com/photo-1585244778423-ca6cca298317?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 25, "max_temp": 45, "min_rain": 200, "max_rain": 500, "n": 100, "p": 40, "k": 40 },
+        "compData": { "water": 1, "soil": "Deep Sandy", "climate": "Desert/Hot", "priceCycle": [2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 2, 2] }
+    },
+    {
+        "id": "90",
+        "name": "Fennel",
+        "mr_name": "बडिशेप",
+        "Period": "Cultivation Period: 5-6 months",
+        "mr_period": "लागवड कालावधी: ५-६ महिने",
+        "description": "Fennel is an aromatic spice, often used as a mouth freshener and for its medicinal oils.",
+        "mr_description": "बडिशेप हे सुगंधी आणि औषधी गुणधर्म असलेले मसाल्याचे पीक आहे.",
+        "src": "https://images.unsplash.com/photo-1589133405386-4f404ca84803?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 15, "max_temp": 28, "min_rain": 400, "max_rain": 700, "n": 60, "p": 40, "k": 40 },
+        "compData": { "water": 2, "soil": "Loamy/Well-drained", "climate": "Mild/Cool", "priceCycle": [2, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2] }
+    },
+    {
+        "id": "91",
+        "name": "Marigold",
+        "mr_name": "झेंडू",
+        "Period": "Cultivation Period: 3-4 months",
+        "mr_period": "लागवड कालावधी: ३-४ महिने",
+        "description": "Marigold is a popular festive flower, easy to grow and naturally repellent to many pests.",
+        "mr_description": "झेंडू हे भारतीय सणासुदीत अत्यंत महत्त्वाचे फुलझाड पीक आहे.",
+        "src": "https://images.unsplash.com/photo-1594236055106-4447385d58f5?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 15, "max_temp": 35, "min_rain": 500, "max_rain": 1000, "n": 60, "p": 60, "k": 60 },
+        "compData": { "water": 3, "soil": "Sandy Loam/Clayey", "climate": "Sunny/Diverse", "priceCycle": [3, 3, 3, 2, 2, 2, 2, 2, 2, 3, 3, 3] }
+    },
+    {
+        "id": "92",
+        "name": "Jasmine",
+        "mr_name": "मोगरा (जाई-जुई)",
+        "Period": "Cultivation Period: Year-round",
+        "mr_period": "लागवड कालावधी: वर्षभर",
+        "description": "Jasmine is an aromatic flower widely used for essential oils and garlands.",
+        "mr_description": "मोगरा हे त्याच्या सुगंधासाठी प्रसिद्ध असलेले फुलझाड पीक आहे.",
+        "src": "https://images.unsplash.com/photo-1594910405106-9538c6f11467?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 25, "max_temp": 38, "min_rain": 800, "max_rain": 1500, "n": 100, "p": 60, "k": 60 },
+        "compData": { "water": 4, "soil": "Sandy/Alluvial Loam", "climate": "Hot/Humid", "priceCycle": [3, 3, 3, 2, 2, 2, 2, 2, 2, 3, 3, 3] }
+    },
+    {
+        "id": "93",
+        "name": "Moringa",
+        "mr_name": "शेवगा",
+        "Period": "Cultivation Period: 6 months",
+        "mr_period": "लागवड कालावधी: ६ महिने",
+        "description": "Moringa is known as the 'Miracle Tree' for its high nutrient density.",
+        "mr_description": "शेवगा ही एक बहुगुणी वनस्पती आहे.",
+        "src": "https://images.unsplash.com/photo-1616423642371-36ba906753f2?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 25, "max_temp": 45, "min_rain": 250, "max_rain": 1000, "n": 40, "p": 40, "k": 40 },
+        "compData": { "water": 1, "soil": "Arid Sandy", "climate": "Hot", "priceCycle": [2, 3, 3, 3, 2, 1, 1, 1, 1, 2, 3, 3] }
+    },
+    {
+        "id": "94",
+        "name": "Kodo Millet",
+        "mr_name": "कोदो नाचणी",
+        "Period": "Cultivation Period: 4 months",
+        "mr_period": "लागवड कालावधी: ४ महिने",
+        "description": "Kodo millet is a gluten-free grain, extremely resilient to flooding and drought.",
+        "mr_description": "कोदो हे एक कमी पाण्यात येणारे पोषक कडधान्य आहे.",
+        "src": "https://images.unsplash.com/photo-1600188769045-bc6026ba8cd4?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 20, "max_temp": 38, "min_rain": 400, "max_rain": 800, "n": 40, "p": 30, "k": 30 },
+        "compData": { "water": 1, "soil": "Marginal Gravelly", "climate": "Semi-arid", "priceCycle": [2, 2, 3, 3, 3, 2, 1, 1, 1, 1, 2, 2] }
+    },
+    {
+        "id": "95",
+        "name": "Foxtail Millet",
+        "mr_name": "राळा",
+        "Period": "Cultivation Period: 3 months",
+        "mr_period": "लागवड कालावधी: ३ महिने",
+        "description": "Foxtail millet is a fast-growing, nutritious grain popular in southern India.",
+        "mr_description": "राळा हे सर्वात लवकर येणारे तृणधान्य आहे.",
+        "src": "https://images.unsplash.com/photo-161004890684-d8cbf643f5f2?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 15, "max_temp": 32, "min_rain": 500, "max_rain": 700, "n": 40, "p": 40, "k": 40 },
+        "compData": { "water": 1, "soil": "Sandy Loam", "climate": "Mild/Tropical", "priceCycle": [2, 2, 3, 3, 3, 2, 1, 1, 1, 1, 2, 2] }
+    },
+    {
+        "id": "96",
+        "name": "Barnyard Millet",
+        "mr_name": "वरी (भगर)",
+        "Period": "Cultivation Period: 2.5 months",
+        "mr_period": "लागवड कालावधी: २.५ महिने",
+        "description": "Barnyard millet (Sanwa) is a favorite during fasting days in India.",
+        "mr_description": "वरी किंवा भगर हे उपवासासाठी वापरले जाणारे मुख्य धान्य आहे.",
+        "src": "https://images.unsplash.com/photo-1600188769045-bc6026ba8cd4?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 15, "max_temp": 35, "min_rain": 400, "max_rain": 600, "n": 30, "p": 30, "k": 30 },
+        "compData": { "water": 1, "soil": "Light Sandy", "climate": "Diverse", "priceCycle": [3, 3, 3, 3, 2, 1, 1, 1, 1, 2, 3, 3] }
+    },
+    {
+        "id": "97",
+        "name": "Quinoa",
+        "mr_name": "क्विनोआ",
+        "Period": "Cultivation Period: 4 months",
+        "mr_period": "लागवड कालावधी: ४ महिने",
+        "description": "Quinoa is a pseudo-cereal high in complete protein, adaptable to cold hills.",
+        "mr_description": "क्विनोआ हे प्रथिनांनी समृद्ध असलेले आधुनिक काळातील लोकप्रिय धान्य आहे.",
+        "src": "https://images.unsplash.com/photo-1509358271058-acd22cc93898?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": -2, "max_temp": 25, "min_rain": 300, "max_rain": 600, "n": 100, "p": 60, "k": 80 },
+        "compData": { "water": 2, "soil": "Loamy/Well-drained", "climate": "Cold/High Altitude", "priceCycle": [3, 3, 3, 2, 2, 2, 2, 2, 2, 3, 3, 3] }
+    },
+    {
+        "id": "98",
+        "name": "Oats",
+        "mr_name": "ओट्स",
+        "Period": "Cultivation Period: 4 months",
+        "mr_period": "लागवड कालावधी: ४ महिने",
+        "description": "Oats are cool-season grains, widely used for breakfast energy.",
+        "mr_description": "ओट्स हे हिवाळ्यातील आरोग्यदायी धान्य आहे.",
+        "src": "https://images.unsplash.com/photo-1589133405386-4f404ca84803?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 10, "max_temp": 25, "min_rain": 600, "max_rain": 1200, "n": 90, "p": 40, "k": 60 },
+        "compData": { "water": 3, "soil": "Deep Fertile Loam", "climate": "Cool/Moist", "priceCycle": [2, 2, 3, 3, 3, 2, 1, 1, 1, 1, 2, 2] }
+    },
+    {
+        "id": "99",
+        "name": "Pear",
+        "mr_name": "पेअर (नाशपाती)",
+        "Period": "Cultivation Period: 5 months",
+        "mr_period": "लागवड कालावधी: ५ महिने",
+        "description": "Pears are temperate fruits with a sweet, crunchy texture.",
+        "mr_description": "नाशपाती हे सफरचंदासारखे पण वेगळ्या चवीचे थंड हवामानातील फळ आहे.",
+        "src": "https://images.unsplash.com/photo-1514756331096-242f390efe2a?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 10, "max_temp": 25, "min_rain": 800, "max_rain": 1400, "n": 80, "p": 40, "k": 100 },
+        "compData": { "water": 4, "soil": "Deep Sandy Loam", "climate": "Cool", "priceCycle": [1, 1, 2, 3, 3, 3, 2, 1, 1, 1, 1, 1] }
+    },
+    {
+        "id": "100",
+        "name": "Plum",
+        "mr_name": "प्लम (आलू बुखारा)",
+        "Period": "Cultivation Period: 4 months",
+        "mr_period": "लागवड कालावधी: ४ महिने",
+        "description": "Plums are stone fruits requiring cold winters to set fruit properly.",
+        "mr_description": "प्लम हे हिवाळ्यातील एक गोड-आंबट स्वादाचे फळ आहे.",
+        "src": "https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 5, "max_temp": 22, "min_rain": 700, "max_rain": 1200, "n": 70, "p": 40, "k": 90 },
+        "compData": { "water": 3, "soil": "Rich Loamy", "climate": "Temperate", "priceCycle": [1, 1, 2, 3, 3, 3, 2, 1, 1, 1, 1, 1] }
+    },
+    {
+        "id": "101",
+        "name": "Peach",
+        "mr_name": "पीच",
+        "Period": "Cultivation Period: 4 months",
+        "mr_period": "लागवड कालावधी: ४ महिने",
+        "description": "Peaches are fuzzy-skinned fruits that thrive in mild hill climates.",
+        "mr_description": "पीच हे मऊ सालीचे आणि अत्यंत स्वादिष्ठ फळ आहे.",
+        "src": "https://images.unsplash.com/photo-1521401830884-6c03c1c87ebb?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 15, "max_temp": 28, "min_rain": 500, "max_rain": 1000, "n": 80, "p": 40, "k": 120 },
+        "compData": { "water": 3, "soil": "Loose Alluvial", "climate": "Mild/Sun", "priceCycle": [1, 1, 1, 2, 3, 3, 2, 1, 1, 1, 1, 1] }
+    },
+    {
+        "id": "102",
+        "name": "Apricot",
+        "mr_name": "जर्दाळू",
+        "Period": "Cultivation Period: 5 months",
+        "mr_period": "लागवड कालावधी: ५ महिने",
+        "description": "Apricots are nutrient-dense stone fruits grown in dry temperate zones.",
+        "mr_description": "जर्दाळू हे कोरड्या हवामानातील ऊर्जा देणारे फळ आहे.",
+        "src": "https://images.unsplash.com/photo-1543362145-296210f972b2?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 10, "max_temp": 25, "min_rain": 400, "max_rain": 800, "n": 60, "p": 40, "k": 60 },
+        "compData": { "water": 2, "soil": "Gravelly/Sandy Loam", "climate": "Dry/Temperatre", "priceCycle": [2, 2, 2, 3, 3, 3, 2, 1, 1, 1, 2, 2] }
+    },
+    {
+        "id": "103",
+        "name": "Fig",
+        "mr_name": "अंजीर",
+        "Period": "Cultivation Period: Year-round (Harvest phases)",
+        "mr_period": "लागवड कालावधी: वर्षभर",
+        "description": "Figs are sugar-rich fruits that thrive in dry heat and low humidity.",
+        "mr_description": "अंजीर हे पुणे, सासवड यांसारख्या उष्ण हवामानात येणारे गोड फळ आहे.",
+        "src": "https://images.unsplash.com/photo-1628042466033-d8cbf643f5f2?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 20, "max_temp": 38, "min_rain": 250, "max_rain": 600, "n": 60, "p": 40, "k": 60 },
+        "compData": { "water": 2, "soil": "Sandy Loam/Clayey", "climate": "Dry/Sunny", "priceCycle": [3, 3, 3, 2, 2, 2, 2, 2, 2, 3, 3, 3] }
+    },
+    {
+        "id": "104",
+        "name": "Jamun",
+        "mr_name": "जांभूळ",
+        "Period": "Cultivation Period: 10 years (First harvest)",
+        "mr_period": "लागवड कालावधी: १० वर्षे",
+        "description": "Jamun is a hardy Indian fruit known for its medicinal benefits for diabetes.",
+        "mr_description": "जांभूळ हे आरोग्यासाठी, विशेषतः मधुमेहासाठी अत्यंत गुणकारी फळ आहे.",
+        "src": "https://images.unsplash.com/photo-1628173456070-07755ba3e3f?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 20, "max_temp": 45, "min_rain": 600, "max_rain": 1800, "n": 40, "p": 20, "k": 40 },
+        "compData": { "water": 2, "soil": "Any Soil/Black Silt", "climate": "Tropical", "priceCycle": [1, 1, 1, 1, 2, 3, 2, 1, 1, 1, 1, 1] }
+    },
+    {
+        "id": "105",
+        "name": "Ridge Gourd",
+        "mr_name": "दोडका",
+        "Period": "Cultivation Period: 3 months",
+        "mr_period": "लागवड कालावधी: ३ महिने",
+        "description": "Ridge gourd is a nutritious vine vegetable common in Indian rainy seasons.",
+        "mr_description": "दोडका हे पावसाळ्यातील एक लोकप्रिय आणि सहज येणारे पीक आहे.",
+        "src": "https://images.unsplash.com/photo-1594910405106-9538c6f11467?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 20, "max_temp": 35, "min_rain": 600, "max_rain": 1200, "n": 60, "p": 40, "k": 40 },
+        "compData": { "water": 3, "soil": "Fertile Loam", "climate": "Rainy/Humid", "priceCycle": [2, 3, 3, 2, 1, 1, 1, 1, 2, 3, 3, 2] }
+    },
+    {
+        "id": "106",
+        "name": "Snake Gourd",
+        "mr_name": "पडवळ",
+        "Period": "Cultivation Period: 3.5 months",
+        "mr_period": "लागवड कालावधी: ३.५ महिने",
+        "description": "Snake gourd is a long, light green vegetable requiring a trellis to grow straight.",
+        "mr_description": "पडवळ हे वेलवर्गीय पीक असून याला मांडवाची गरज असते.",
+        "src": "https://images.unsplash.com/photo-1594968973184-9140fa30776d?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 25, "max_temp": 40, "min_rain": 800, "max_rain": 1500, "n": 80, "p": 40, "k": 40 },
+        "compData": { "water": 4, "soil": "Heavy Loam", "climate": "Humid/Tropical", "priceCycle": [2, 3, 3, 2, 1, 1, 1, 1, 2, 3, 3, 2] }
+    },
+    {
+        "id": "107",
+        "name": "Coriander",
+        "mr_name": "कोथिंबीर",
+        "Period": "Cultivation Period: 1.5 months",
+        "mr_period": "लागवड कालावधी: १.५ महिने",
+        "description": "Coriander is an essential culinary herb, grown fast for its leaves.",
+        "mr_description": "कोथिंबीर हे दररोज लागणारे कमी कालावधीतील पालेभाजी पीक आहे.",
+        "src": "https://images.unsplash.com/photo-1528796940112-4979b4a98424?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 15, "max_temp": 30, "min_rain": 250, "max_rain": 600, "n": 40, "p": 40, "k": 40 },
+        "compData": { "water": 2, "soil": "Sandy Loam/Clayey", "climate": "Mild/Diverse", "priceCycle": [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3] }
+    },
+    {
+        "id": "108",
+        "name": "Fenugreek",
+        "mr_name": "मेथी",
+        "Period": "Cultivation Period: 1 month",
+        "mr_period": "लागवड कालावधी: १ महिना",
+        "description": "Fenugreek (Methi) is a popular leafy vegetable, providing iron and fiber.",
+        "mr_description": "मेथी हे अतिशय कमी वेळात येणारे आणि लोहयुक्त पीक आहे.",
+        "src": "https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 10, "max_temp": 32, "min_rain": 200, "max_rain": 500, "n": 30, "p": 30, "k": 30 },
+        "compData": { "water": 2, "soil": "Fertile Sandy", "climate": "Mild", "priceCycle": [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3] }
+    },
+    {
+        "id": "109",
+        "name": "Curry Leaves",
+        "mr_name": "कढीपत्ता",
+        "Period": "Cultivation Period: Year-round",
+        "mr_period": "लागवड कालावधी: वर्षभर",
+        "description": "Curry leaves are essential for Indian spice tempering.",
+        "mr_description": "कढीपत्ता हे स्वयंपाकात सुवासासाठी वापरले जाणारे झाड आहे.",
+        "src": "https://images.unsplash.com/photo-1616423642371-36ba906753f2?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 20, "max_temp": 38, "min_rain": 600, "max_rain": 1200, "n": 40, "p": 20, "k": 40 },
+        "compData": { "water": 2, "soil": "Well-drained Rich", "climate": "Tropical/Hot", "priceCycle": [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3] }
+    },
+    {
+        "id": "110",
+        "name": "Mint",
+        "mr_name": "पुदिना",
+        "Period": "Cultivation Period: 1.5 months",
+        "mr_period": "लागवड कालावधी: १.५ महिने",
+        "description": "Mint is a fast-growing herb that requires constant moisture and cool roots.",
+        "mr_description": "पुदिना हे थंड चवीसाठी आणि स्वादासाठी वापरले जाणारे पीक आहे.",
+        "src": "https://images.unsplash.com/photo-1528796940112-4979b4a98424?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 15, "max_temp": 30, "min_rain": 1000, "max_rain": 1800, "n": 60, "p": 40, "k": 40 },
+        "compData": { "water": 4, "soil": "Wet Loamy", "climate": "Shady/Cool", "priceCycle": [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3] }
+    },
+    {
+        "id": "111",
+        "name": "Lettuce",
+        "mr_name": "लेट्यूस (सॅलड पान)",
+        "Period": "Cultivation Period: 2 months",
+        "mr_period": "लागवड कालावधी: २ महिने",
+        "description": "Lettuce is a high-value leafy vegetable grown in cool seasons or controlled zones.",
+        "mr_description": "लेट्यूस हे सॅलडसाठी वापरले जाणारे आधुनिक काळातील पालेभाजी पीक आहे.",
+        "src": "https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 10, "max_temp": 22, "min_rain": 500, "max_rain": 800, "n": 100, "p": 40, "k": 40 },
+        "compData": { "water": 3, "soil": "Sandy Fertile", "climate": "Cool/Sunny", "priceCycle": [3, 3, 2, 1, 1, 1, 1, 1, 1, 2, 3, 3] }
+    },
+    {
+        "id": "112",
+        "name": "Kiwi",
+        "mr_name": "किवी",
+        "Period": "Cultivation Period: 3-4 years",
+        "mr_period": "लागवड कालावधी: ३-४ वर्षे",
+        "description": "Kiwi is a high-value fruit requiring cool hill climates and reliable irrigation.",
+        "mr_description": "किवी हे डेंग्यूसारख्या आजारात फायदेशीर ठरणारे थंड हवेतील फळ आहे.",
+        "src": "https://images.unsplash.com/photo-1596541223130-5d31a73fb6c6?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 10, "max_temp": 28, "min_rain": 1000, "max_rain": 1500, "n": 120, "p": 60, "k": 100 },
+        "compData": { "water": 4, "soil": "Rich Acidic Loam", "climate": "High Altitude", "priceCycle": [1, 1, 1, 2, 3, 3, 2, 1, 1, 1, 1, 1] }
+    },
+    {
+        "id": "113",
+        "name": "Cherry",
+        "mr_name": "चेरी",
+        "Period": "Cultivation Period: 4 months (Harvest)",
+        "mr_period": "लागवड कालावधी: ४ महिने",
+        "description": "Cherries are premium temperate fruits, mainly grown in the northern hilly belts.",
+        "mr_description": "चेरी हे काश्मीरसारख्या अत्यंत थंड ठिकाणी येणारे आकर्षक फळ आहे.",
+        "src": "https://images.unsplash.com/photo-1527324688101-08d3a984c041?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": -5, "max_temp": 20, "min_rain": 1000, "max_rain": 1600, "n": 60, "p": 40, "k": 80 },
+        "compData": { "water": 4, "soil": "Deep Well-drained", "climate": "Alpine/Cold", "priceCycle": [1, 1, 1, 2, 3, 3, 2, 1, 1, 1, 1, 1] }
+    },
+    {
+        "id": "114",
+        "name": "Ashwagandha",
+        "mr_name": "अश्वगंधा",
+        "Period": "Cultivation Period: 5-6 months",
+        "mr_period": "लागवड कालावधी: ५-६ महिने",
+        "description": "Ashwagandha is a core Ayurvedic herb, booming in commercial demand.",
+        "mr_description": "अश्वगंधा ही आधुनिक काळातील अत्यंत मौल्यवान औषधी वनस्पती आहे.",
+        "src": "https://images.unsplash.com/photo-1596541223130-5d31a73fb6c6?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 20, "max_temp": 38, "min_rain": 600, "max_rain": 1000, "n": 40, "p": 40, "k": 40 },
+        "compData": { "water": 2, "soil": "Sandy Loam/Gravelly", "climate": "Hot/Dry", "priceCycle": [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3] }
+    }
+];
+7324688101-08d3a984c041?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 20, "max_temp": 38, "min_rain": 500, "max_rain": 1200, "n": 60, "p": 40, "k": 60 },
+        "compData": { "water": 1, "soil": "Sandy/Well-drained", "climate": "Hot/Dry" }
+    },
+    {
+        "id": "69",
+        "name": "Drumstick",
+        "mr_name": "शेवगा (मोरिंगा)",
+        "Period": "Cultivation Period: 6-8 months",
+        "mr_period": "लागवड कालावधी: ६-८ महिने",
+        "description": "Drumstick (Moringa) is a superfood tree, providing nutrient-rich leaves and pods.",
+        "mr_description": "शेवगा हे अत्यंत पोषक पीक असून याची पाने आणि शेंगा दोन्ही खाल्ले जातात.",
+        "src": "https://images.unsplash.com/photo-1616423642371-36ba906753f2?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 25, "max_temp": 40, "min_rain": 250, "max_rain": 1500, "n": 40, "p": 40, "k": 40 },
+        "compData": { "water": 1, "soil": "Alluvial/Lateirte", "climate": "Hot/Tropical" }
+    },
+    {
+        "id": "70",
+        "name": "Strawberry",
+        "mr_name": "स्ट्रॉबेरी",
+        "Period": "Cultivation Period: 3-4 months",
+        "mr_period": "लागवड कालावधी: ३-४ महिने",
+        "description": "Strawberry is a temperate fruit that requires cool nights and sunny days.",
+        "mr_description": "स्ट्रॉबेरी हे महाबळेश्वर सारख्या थंड हवेच्या ठिकाणी येणारे लोकप्रिय फळ आहे.",
+        "src": "https://images.unsplash.com/photo-1464960351845-d3ec27b16bd2?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 10, "max_temp": 25, "min_rain": 500, "max_rain": 1000, "n": 90, "p": 60, "k": 100 },
+        "compData": { "water": 3, "soil": "Humus Rich/Loamy", "climate": "Cool/Frost-free" }
+    },
+    {
+        "id": "71",
+        "name": "Cumin",
+        "mr_name": "जिरे",
+        "Period": "Cultivation Period: 4 months",
+        "mr_period": "लागवड कालावधी: ४ महिने",
+        "description": "Cumin is a vital spice that requires a cool climate and low humidity during its growth phase.",
+        "mr_description": "जिरे हे मसाल्याचे महत्त्वाचे पीक असून याला कोरडे हवामान लागते.",
+        "src": "https://images.unsplash.com/photo-1589133405386-4f404ca84803?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 20, "max_temp": 30, "min_rain": 100, "max_rain": 400, "n": 40, "p": 20, "k": 20 },
+        "compData": { "water": 1, "soil": "Sandy Loam/Well-drained", "climate": "Dry/Cool Winter" }
+    },
+    {
+        "id": "72",
+        "name": "Pineapple",
+        "mr_name": "अननस",
+        "Period": "Cultivation Period: 12-18 months",
+        "mr_period": "लागवड कालावधी: १२-१८ महिने",
+        "description": "Pineapple is a tropical fruit that grows well in acidic soils and humid environments.",
+        "mr_description": "अननस हे उष्णकटिबंधीय फळ असून याला निचऱ्याची जमीन लागते.",
+        "src": "https://images.unsplash.com/photo-1550258987-190a2d41a8ba?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 20, "max_temp": 35, "min_rain": 1000, "max_rain": 2500, "n": 80, "p": 40, "k": 80 },
+        "compData": { "water": 3, "soil": "Sandy/Acidic", "climate": "Humid/Hot" }
+    },
+    {
+        "id": "73",
+        "name": "Rose",
+        "mr_name": "गुलाब",
+        "Period": "Cultivation Period: Year-round",
+        "mr_period": "लागवड कालावधी: वर्षभर",
+        "description": "Roses are the most popular ornamental flowers, grown for their beauty and fragrance.",
+        "mr_description": "गुलाब हे स्वांदर्पपूर्ण आणि सुगंधी फुलांपैकी एक आहे.",
+        "src": "https://images.unsplash.com/photo-1496062031456-07b8f162a322?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 15, "max_temp": 30, "min_rain": 500, "max_rain": 1200, "n": 100, "p": 80, "k": 100 },
+        "compData": { "water": 4, "soil": "Rich Clayey/Loamy", "climate": "Mild/Sunny" }
+    },
+    {
+        "id": "74",
+        "name": "Almond",
+        "mr_name": "बदाम",
+        "Period": "Cultivation Period: 3-5 years",
+        "mr_period": "लागवड कालावधी: ३-५ वर्षे",
+        "description": "Almonds are high-value nuts grown in temperate regions with dry summers.",
+        "mr_description": "बदाम हे एक कोरड्या हवामानातील उच्च मूल्याचे पीक आहे.",
+        "src": "https://images.unsplash.com/photo-1508817628294-5a453fa0b8fb?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 10, "max_temp": 32, "min_rain": 300, "max_rain": 800, "n": 120, "p": 60, "k": 100 },
+        "compData": { "water": 2, "soil": "Deep Sandy Loam", "climate": "Dry/Mild" }
+    },
+    {
+        "id": "75",
+        "name": "Cashew",
+        "mr_name": "काजू",
+        "Period": "Cultivation Period: 3-5 years",
+        "mr_period": "लागवड कालावधी: ३-५ वर्षे",
+        "description": "Cashew is a tropical nut crop that thrives in coastal sandy soils and low rainfall.",
+        "mr_description": "काजू हे कोकण पट्ट्यातील एक प्रमुख नगदी पीक आहे.",
+        "src": "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 20, "max_temp": 40, "min_rain": 500, "max_rain": 2000, "n": 60, "p": 40, "k": 40 },
+        "compData": { "water": 1, "soil": "Sandy/Laterite", "climate": "Hot/Coastal" }
+    },
+    {
+        "id": "76",
+        "name": "Pumpkin",
+        "mr_name": "भोपळा (लाल भोपळा)",
+        "Period": "Cultivation Period: 3-4 months",
+        "mr_period": "लागवड कालावधी: ३-४ महिने",
+        "description": "Pumpkin is a versatile gourd, rich in antioxidants and vitamins.",
+        "mr_description": "लाल भोपळा हे वर्षभर मिळणारे आणि पोषक पीक आहे.",
+        "src": "https://images.unsplash.com/photo-1506867076597-8171d5362a96?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 20, "max_temp": 35, "min_rain": 600, "max_rain": 1200, "n": 60, "p": 60, "k": 60 },
+        "compData": { "water": 3, "soil": "Fertile Loamy", "climate": "Hot/Summer" }
+    },
+    {
+        "id": "77",
+        "name": "Capsicum",
+        "mr_name": "ढोबळी मिरची (शिमला मिरची)",
+        "Period": "Cultivation Period: 3-4 months",
+        "mr_period": "लागवड कालावधी: ३-४ महिने",
+        "description": "Capsicum or bell peppers are high-value vegetables grown in open fields or greenhouses.",
+        "mr_description": "शिमला मिरची किंवा कलर कॅप्सिकम ही सध्या खूप नफा देणारी पीक आहेत.",
+        "src": "https://images.unsplash.com/photo-1563502315552-c6b97ce0a660?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 20, "max_temp": 30, "min_rain": 600, "max_rain": 1200, "n": 100, "p": 80, "k": 80 },
+        "compData": { "water": 3, "soil": "Rich Silt Loam", "climate": "Mild/Tropical" }
+    },
+    {
+        "id": "78",
+        "name": "Sweet Potato",
+        "mr_name": "रताळे",
+        "Period": "Cultivation Period: 4 months",
+        "mr_period": "लागवड कालावधी: ४ महिने",
+        "description": "Sweet potatoes are energy-rich tubers that grow well in hot regions with decent rainfall.",
+        "mr_description": "रताळे हे ऊर्जेचा उत्तम स्रोत असून ते कंदवर्गीय फळभाजी आहे.",
+        "src": "https://images.unsplash.com/photo-1596097635121-14b63b7a0c19?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 24, "max_temp": 35, "min_rain": 750, "max_rain": 1250, "n": 60, "p": 40, "k": 80 },
+        "compData": { "water": 3, "soil": "Sandy/Loose Soil", "climate": "Hot/Humid" }
+    },
+    {
+        "id": "79",
+        "name": "Bitter Gourd",
+        "mr_name": "कारले",
+        "Period": "Cultivation Period: 3-4 months",
+        "mr_period": "लागवड कालावधी: ३-४ महिने",
+        "description": "Bitter gourd is a medicinal vegetable widely grown in Asia, known for its bitter taste.",
+        "mr_description": "कारले हे आरोग्यासाठी अत्यंत कडू पण गुणकारी पीक आहे.",
+        "src": "https://images.unsplash.com/photo-1583689464402-b2654911910d?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 25, "max_temp": 38, "min_rain": 500, "max_rain": 1500, "n": 60, "p": 40, "k": 40 },
+        "compData": { "water": 3, "soil": "Sandy Loam/Mandra", "climate": "Hot/Humid" }
+    },
+    {
+        "id": "80",
+        "name": "Bottle Gourd",
+        "mr_name": "दुधी भोपळा",
+        "Period": "Cultivation Period: 3 months",
+        "mr_period": "लागवड कालावधी: ३ महिने",
+        "description": "Bottle gourd is a cooling vegetable crop with high water content, ideal for summer.",
+        "mr_description": "दुधी भोपळा हे उन्हाळ्यातील अत्यंत थंड आणि रसाळ पीक आहे.",
+        "src": "https://images.unsplash.com/photo-1594968973184-9140fa30776d?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 20, "max_temp": 35, "min_rain": 500, "max_rain": 1000, "n": 40, "p": 40, "k": 40 },
+        "compData": { "water": 3, "soil": "Silt Loam/Alluvial", "climate": "Mild/Summer" }
+    },
+    {
+        "id": "81",
+        "name": "Beetroot",
+        "mr_name": "बीट",
+        "Period": "Cultivation Period: 2-3 months",
+        "mr_period": "लागवड कालावधी: २-३ महिने",
+        "description": "Beetroot is a nutrient-dense root crop that thrives in cool environments.",
+        "mr_description": "बीट हे आरोग्यासाठी अत्यंत उपयुक्त आणि फायदेशीर कंदभाजी आहे.",
+        "src": "https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 15, "max_temp": 25, "min_rain": 300, "max_rain": 600, "n": 80, "p": 60, "k": 80 },
+        "compData": { "water": 2, "soil": "Sandy Loam", "climate": "Cool" }
+    },
+    {
+        "id": "82",
+        "name": "Sapota",
+        "mr_name": "चिकू",
+        "Period": "Cultivation Period: 3-5 years",
+        "mr_period": "लागवड कालावधी: ३-५ वर्षे",
+        "description": "Sapota (Chiku) is a tropical evergreen fruit tree that gives fruit year-round.",
+        "mr_description": "चिकू हे डहाणूसारख्या किनारपट्टी भागात वर्षभर उत्पादन देणारे फळ आहे.",
+        "src": "https://images.unsplash.com/photo-1596541223130-5d31a73fb6c6?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 20, "max_temp": 38, "min_rain": 1000, "max_rain": 2500, "n": 80, "p": 40, "k": 60 },
+        "compData": { "water": 3, "soil": "Alluvial/Sandy Loam", "climate": "Hot/Humid" }
+    },
+    {
+        "id": "83",
+        "name": "Tamarind",
+        "mr_name": "चिंच",
+        "Period": "Cultivation Period: 10-15 years",
+        "mr_period": "लागवड कालावधी: १०-१५ वर्षे",
+        "description": "Tamarind is a long-lived tree producing sour-sweet pods, resistant to droughts.",
+        "mr_description": "चिंच हे अत्यंत काटक आणि दीर्घायुष्य असलेले झाड असून ते कोरड्या हवामानातही येते.",
+        "src": "https://images.unsplash.com/photo-1616423642371-36ba906753f2?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 25, "max_temp": 45, "min_rain": 300, "max_rain": 1000, "n": 40, "p": 20, "k": 40 },
+        "compData": { "water": 1, "soil": "Any Soil/Black", "climate": "Arid/Tropical" }
+    },
+    {
+        "id": "84",
+        "name": "Custard Apple",
+        "mr_name": "सीताफळ",
+        "Period": "Cultivation Period: 3-4 years",
+        "mr_period": "लागवड कालावधी: ३-४ वर्षे",
+        "description": "Custard Apple is a sweet, creamy fruit that grows well on hilly slopes and dry zones.",
+        "mr_description": "सीताफळ हे डोंगराळ भागात आणि कोरड्या हवामानात येणारे अत्यंत गोड फळ आहे.",
+        "src": "https://images.unsplash.com/photo-1596541223130-5d31a73fb6c6?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 20, "max_temp": 35, "min_rain": 400, "max_rain": 800, "n": 40, "p": 40, "k": 40 },
+        "compData": { "water": 1, "soil": "Rocky/Sandy Loam", "climate": "Dry/Subtropical" }
+    },
+    {
+        "id": "85",
+        "name": "Walnut",
+        "mr_name": "अक्रोड",
+        "Period": "Cultivation Period: 7-10 years",
+        "mr_period": "लागवड कालावधी: ७-१० वर्षे",
+        "description": "Walnut is a premium nut crop requiring temperate climates and deep, well-drained soils.",
+        "mr_description": "अक्रोड हे थंड प्रदेशातील एक अत्यंत मौल्यवान कोरडा मेवा पीक आहे.",
+        "src": "https://images.unsplash.com/photo-1585244778423-ca6cca298317?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 5, "max_temp": 25, "min_rain": 1000, "max_rain": 1500, "n": 100, "p": 60, "k": 80 },
+        "compData": { "water": 4, "soil": "Deep Fertile Loam", "climate": "Temperate/Cold" }
+    },
+    {
+        "id": "86",
+        "name": "Saffron",
+        "mr_name": "केशर",
+        "Period": "Cultivation Period: 2-3 months",
+        "mr_period": "लागवड कालावधी: २-३ महिने",
+        "description": "Saffron is the world's most expensive spice, harvested from crocus flowers in Kashmir.",
+        "mr_description": "केशर हे जगातील सर्वात महागडे मसाला पीक आहे जे काश्मीरमध्ये पिकवले जाते.",
+        "src": "https://images.unsplash.com/photo-1508817628294-5a453fa0b8fb?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": -5, "max_temp": 20, "min_rain": 400, "max_rain": 800, "n": 80, "p": 40, "k": 60 },
+        "compData": { "water": 2, "soil": "Rich Clayey/Calcareous", "climate": "Cold/Alpine" }
+    },
+    {
+        "id": "87",
+        "name": "Ajwain",
+        "mr_name": "ओवा",
+        "Period": "Cultivation Period: 5 months",
+        "mr_period": "लागवड कालावधी: ५ महिने",
+        "description": "Ajwain (Carom seeds) is a medicinal spice crop, tolerant to heat and low moisture.",
+        "mr_description": "ओवा हे त्याच्या पचनशक्ती आणि औषधी गुणधर्मांसाठी ओळखले जाणारे पीक आहे.",
+        "src": "https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 20, "max_temp": 35, "min_rain": 200, "max_rain": 500, "n": 40, "p": 40, "k": 20 },
+        "compData": { "water": 1, "soil": "Sandy Loam", "climate": "Hot/Dry" }
+    },
+    {
+        "id": "88",
+        "name": "Litchi",
+        "mr_name": "लिची",
+        "Period": "Cultivation Period: 5-7 years",
+        "mr_period": "लागवड कालावधी: ५-७ वर्षे",
+        "description": "Litchi is a sensitive fruit requiring specific conditions of moist heat and humid weather.",
+        "mr_description": "लिची हे एक रसाळ आणि गोड फळ असून याला विशिष्ट हवामानाची गरज असते.",
+        "src": "https://images.unsplash.com/photo-1527324688101-08d3a984c041?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 20, "max_temp": 30, "min_rain": 1200, "max_rain": 2000, "n": 90, "p": 50, "k": 90 },
+        "compData": { "water": 4, "soil": "Deep Silt Loam", "climate": "Humid/Subtropical" }
+    },
+    {
+        "id": "89",
+        "name": "Pistachio",
+        "mr_name": "पिस्ता",
+        "Period": "Cultivation Period: 7-10 years",
+        "mr_period": "लागवड कालावधी: ७-१० वर्षे",
+        "description": "Pistachios are resilient nuts that thrive in high-heat desert environments.",
+        "mr_description": "पिस्ता हे वाळवंटी भागातील पीक असून याला प्रखर ऊन लागते.",
+        "src": "https://images.unsplash.com/photo-1508817628294-5a453fa0b8fb?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 25, "max_temp": 45, "min_rain": 200, "max_rain": 500, "n": 100, "p": 40, "k": 40 },
+        "compData": { "water": 1, "soil": "Deep Sandy", "climate": "Desert/Hot" }
+    },
+    {
+        "id": "90",
+        "name": "Fennel",
+        "mr_name": "बडिशेप",
+        "Period": "Cultivation Period: 5-6 months",
+        "mr_period": "लागवड कालावधी: ५-६ महिने",
+        "description": "Fennel is an aromatic spice, often used as a mouth freshener and for its medicinal oils.",
+        "mr_description": "बडिशेप हे सुगंधी आणि औषधी गुणधर्म असलेले मसाल्याचे पीक आहे.",
+        "src": "https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 15, "max_temp": 28, "min_rain": 400, "max_rain": 700, "n": 60, "p": 40, "k": 40 },
+        "compData": { "water": 2, "soil": "Loamy/Well-drained", "climate": "Mild/Cool" }
+    },
+    {
+        "id": "91",
+        "name": "Marigold",
+        "mr_name": "झेंडू",
+        "Period": "Cultivation Period: 3-4 months",
+        "mr_period": "लागवड कालावधी: ३-४ महिने",
+        "description": "Marigold is a popular festive flower, easy to grow and naturally repellent to many pests.",
+        "mr_description": "झेंडू हे भारतीय सणासुदीत अत्यंत महत्त्वाचे फुलझाड पीक आहे.",
+        "src": "https://images.unsplash.com/photo-1496062031456-07b8f162a322?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 15, "max_temp": 35, "min_rain": 500, "max_rain": 1000, "n": 60, "p": 60, "k": 60 },
+        "compData": { "water": 3, "soil": "Sandy Loam/Clayey", "climate": "Sunny/Diverse" }
+    },
+    {
+        "id": "92",
+        "name": "Jasmine",
+        "mr_name": "मोगरा (जाई-जुई)",
+        "Period": "Cultivation Period: Year-round",
+        "mr_period": "लागवड कालावधी: वर्षभर",
+        "description": "Jasmine is an aromatic flower widely used for essential oils and garlands.",
+        "mr_description": "मोगरा हे त्याच्या सुगंधासाठी प्रसिद्ध असलेले फुलझाड पीक आहे.",
+        "src": "https://images.unsplash.com/photo-1496062031456-07b8f162a322?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 25, "max_temp": 38, "min_rain": 800, "max_rain": 1500, "n": 100, "p": 60, "k": 60 },
+        "compData": { "water": 4, "soil": "Sandy/Alluvial Loam", "climate": "Hot/Humid" }
+    },
+    {
+        "id": "93",
+        "name": "Moringa",
+        "mr_name": "शेवगा",
+        "Period": "Cultivation Period: 6 months",
+        "mr_period": "लागवड कालावधी: ६ महिने",
+        "description": "Moringa is known as the 'Miracle Tree' for its high nutrient density.",
+        "mr_description": "शेवगा ही एक बहुगुणी वनस्पती आहे.",
+        "src": "https://images.unsplash.com/photo-1596541223130-5d31a73fb6c6?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 25, "max_temp": 45, "min_rain": 250, "max_rain": 1000, "n": 40, "p": 40, "k": 40 },
+        "compData": { "water": 1, "soil": "Arid Sandy", "climate": "Hot" }
+    },
+    {
+        "id": "94",
+        "name": "Ragi",
+        "mr_name": "नाचणी",
+        "Period": "Cultivation Period: 4 months",
+        "mr_period": "लागवड कालावधी: ४ महिने",
+        "description": "Finger millet (Ragi) is the hardiest millet, surviving extreme droughts.",
+        "mr_description": "नाचणी ही अत्यंत पोषक आणि दुष्काळातही टिकणारी टीक आहे.",
+        "src": "https://images.unsplash.com/photo-1600188769045-bc6026ba8cd4?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 20, "max_temp": 35, "min_rain": 500, "max_rain": 900, "n": 60, "p": 40, "k": 40 },
+        "compData": { "water": 1, "soil": "Red/Poor Soil", "climate": "Arid" }
+    },
+    {
+        "id": "95",
+        "name": "Kodo Millet",
+        "mr_name": "कोदो नाचणी",
+        "Period": "Cultivation Period: 4 months",
+        "mr_period": "लागवड कालावधी: ४ महिने",
+        "description": "Kodo millet is a gluten-free grain, extremely resilient to flooding and drought.",
+        "mr_description": "कोदो हे एक कमी पाण्यात येणारे पोषक कडधान्य आहे.",
+        "src": "https://images.unsplash.com/photo-1600188769045-bc6026ba8cd4?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 20, "max_temp": 38, "min_rain": 400, "max_rain": 800, "n": 40, "p": 30, "k": 30 },
+        "compData": { "water": 1, "soil": "Marginal Gravelly", "climate": "Semi-arid" }
+    },
+    {
+        "id": "96",
+        "name": "Foxtail Millet",
+        "mr_name": "राळा",
+        "Period": "Cultivation Period: 3 months",
+        "mr_period": "लागवड कालावधी: ३ महिने",
+        "description": "Foxtail millet is a fast-growing, nutritious grain popular in southern India.",
+        "mr_description": "राळा हे सर्वात लवकर येणारे तृणधान्य आहे.",
+        "src": "https://images.unsplash.com/photo-1600188769045-bc6026ba8cd4?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 15, "max_temp": 32, "min_rain": 500, "max_rain": 700, "n": 40, "p": 40, "k": 40 },
+        "compData": { "water": 1, "soil": "Sandy Loam", "climate": "Mild/Tropical" }
+    },
+    {
+        "id": "97",
+        "name": "Barnyard Millet",
+        "mr_name": "वरी (भगर)",
+        "Period": "Cultivation Period: 2.5 months",
+        "mr_period": "लागवड कालावधी: २.५ महिने",
+        "description": "Barnyard millet (Sanwa) is a favorite during fasting days in India.",
+        "mr_description": "वरी किंवा भगर हे उपवासासाठी वापरले जाणारे मुख्य धान्य आहे.",
+        "src": "https://images.unsplash.com/photo-1600188769045-bc6026ba8cd4?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 15, "max_temp": 35, "min_rain": 400, "max_rain": 600, "n": 30, "p": 30, "k": 30 },
+        "compData": { "water": 1, "soil": "Light Sandy", "climate": "Diverse" }
+    },
+    {
+        "id": "98",
+        "name": "Quinoa",
+        "mr_name": "क्विनोआ",
+        "Period": "Cultivation Period: 4 months",
+        "mr_period": "लागवड कालावधी: ४ महिने",
+        "description": "Quinoa is a pseudo-cereal high in complete protein, adaptable to cold hills.",
+        "mr_description": "क्विनोआ हे प्रथिनांनी समृद्ध असलेले आधुनिक काळातील लोकप्रिय धान्य आहे.",
+        "src": "https://images.unsplash.com/photo-1600188769045-bc6026ba8cd4?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": -2, "max_temp": 25, "min_rain": 300, "max_rain": 600, "n": 100, "p": 60, "k": 80 },
+        "compData": { "water": 2, "soil": "Loamy/Well-drained", "climate": "Cold/High Altitude" }
+    },
+    {
+        "id": "99",
+        "name": "Oats",
+        "mr_name": "ओट्स",
+        "Period": "Cultivation Period: 4 months",
+        "mr_period": "लागवड कालावधी: ४ महिने",
+        "description": "Oats are cool-season grains, widely used for breakfast energy.",
+        "mr_description": "ओट्स हे हिवाळ्यातील आरोग्यदायी धान्य आहे.",
+        "src": "https://images.unsplash.com/photo-1600188769045-bc6026ba8cd4?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 10, "max_temp": 25, "min_rain": 600, "max_rain": 1200, "n": 90, "p": 40, "k": 60 },
+        "compData": { "water": 3, "soil": "Deep Fertile Loam", "climate": "Cool/Moist" }
+    },
+    {
+        "id": "100",
+        "name": "Pear",
+        "mr_name": "पेअर (नाशपाती)",
+        "Period": "Cultivation Period: 5 months",
+        "mr_period": "लागवड कालावधी: ५ महिने",
+        "description": "Pears are temperate fruits with a sweet, crunchy texture.",
+        "mr_description": "नाशपाती हे सफरचंदासारखे पण वेगळ्या चवीचे थंड हवामानातील फळ आहे.",
+        "src": "https://images.unsplash.com/photo-1527324688101-08d3a984c041?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 10, "max_temp": 25, "min_rain": 800, "max_rain": 1400, "n": 80, "p": 40, "k": 100 },
+        "compData": { "water": 4, "soil": "Deep Sandy Loam", "climate": "Cool" }
+    },
+    {
+        "id": "101",
+        "name": "Plum",
+        "mr_name": "प्लम (आलू बुखारा)",
+        "Period": "Cultivation Period: 4 months",
+        "mr_period": "लागवड कालावधी: ४ महिने",
+        "description": "Plums are stone fruits requiring cold winters to set fruit properly.",
+        "mr_description": "प्लम हे हिवाळ्यातील एक गोड-आंबट स्वादाचे फळ आहे.",
+        "src": "https://images.unsplash.com/photo-1527324688101-08d3a984c041?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 5, "max_temp": 22, "min_rain": 700, "max_rain": 1200, "n": 70, "p": 40, "k": 90 },
+        "compData": { "water": 3, "soil": "Rich Loamy", "climate": "Temperate" }
+    },
+    {
+        "id": "102",
+        "name": "Peach",
+        "mr_name": "पीच",
+        "Period": "Cultivation Period: 4 months",
+        "mr_period": "लागवड कालावधी: ४ महिने",
+        "description": "Peaches are fuzzy-skinned fruits that thrive in mild hill climates.",
+        "mr_description": "पीच हे मऊ सालीचे आणि अत्यंत स्वादिष्ठ फळ आहे.",
+        "src": "https://images.unsplash.com/photo-1527324688101-08d3a984c041?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 15, "max_temp": 28, "min_rain": 500, "max_rain": 1000, "n": 80, "p": 40, "k": 120 },
+        "compData": { "water": 3, "soil": "Loose Alluvial", "climate": "Mild/Sun" }
+    },
+    {
+        "id": "103",
+        "name": "Apricot",
+        "mr_name": "जर्दाळू",
+        "Period": "Cultivation Period: 5 months",
+        "mr_period": "लागवड कालावधी: ५ महिने",
+        "description": "Apricots are nutrient-dense stone fruits grown in dry temperate zones.",
+        "mr_description": "जर्दाळू हे कोरड्या हवामानातील ऊर्जा देणारे फळ आहे.",
+        "src": "https://images.unsplash.com/photo-1527324688101-08d3a984c041?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 10, "max_temp": 25, "min_rain": 400, "max_rain": 800, "n": 60, "p": 40, "k": 60 },
+        "compData": { "water": 2, "soil": "Gravelly/Sandy Loam", "climate": "Dry/Temperatre" }
+    },
+    {
+        "id": "104",
+        "name": "Fig",
+        "mr_name": "अंजीर",
+        "Period": "Cultivation Period: Year-round (Harvest phases)",
+        "mr_period": "लागवड कालावधी: वर्षभर",
+        "description": "Figs are sugar-rich fruits that thrive in dry heat and low humidity.",
+        "mr_description": "अंजीर हे पुणे, सासवड यांसारख्या उष्ण हवामानात येणारे गोड फळ आहे.",
+        "src": "https://images.unsplash.com/photo-1527324688101-08d3a984c041?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 20, "max_temp": 38, "min_rain": 250, "max_rain": 600, "n": 60, "p": 40, "k": 60 },
+        "compData": { "water": 2, "soil": "Sandy Loam/Clayey", "climate": "Dry/Sunny" }
+    },
+    {
+        "id": "105",
+        "name": "Jamun",
+        "mr_name": "जांभूळ",
+        "Period": "Cultivation Period: 10 years (First harvest)",
+        "mr_period": "लागवड कालावधी: १० वर्षे",
+        "description": "Jamun is a hardy Indian fruit known for its medicinal benefits for diabetes.",
+        "mr_description": "जांभूळ हे आरोग्यासाठी, विशेषतः मधुमेहासाठी अत्यंत गुणकारी फळ आहे.",
+        "src": "https://images.unsplash.com/photo-1527324688101-08d3a984c041?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 20, "max_temp": 45, "min_rain": 600, "max_rain": 1800, "n": 40, "p": 20, "k": 40 },
+        "compData": { "water": 2, "soil": "Any Soil/Black Silt", "climate": "Tropical" }
+    },
+    {
+        "id": "106",
+        "name": "Ridge Gourd",
+        "mr_name": "दोडका",
+        "Period": "Cultivation Period: 3 months",
+        "mr_period": "लागवड कालावधी: ३ महिने",
+        "description": "Ridge gourd is a nutritious vine vegetable common in Indian rainy seasons.",
+        "mr_description": "दोडका हे पावसाळ्यातील एक लोकप्रिय आणि सहज येणारे पीक आहे.",
+        "src": "https://images.unsplash.com/photo-1594968973184-9140fa30776d?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 20, "max_temp": 35, "min_rain": 600, "max_rain": 1200, "n": 60, "p": 40, "k": 40 },
+        "compData": { "water": 3, "soil": "Fertile Loam", "climate": "Rainy/Humid" }
+    },
+    {
+        "id": "107",
+        "name": "Snake Gourd",
+        "mr_name": "पडवळ",
+        "Period": "Cultivation Period: 3.5 months",
+        "mr_period": "लागवड कालावधी: ३.५ महिने",
+        "description": "Snake gourd is a long, light green vegetable requiring a trellis to grow straight.",
+        "mr_description": "पडवळ हे वेलवर्गीय पीक असून याला मांडवाची गरज असते.",
+        "src": "https://images.unsplash.com/photo-1594968973184-9140fa30776d?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 25, "max_temp": 40, "min_rain": 800, "max_rain": 1500, "n": 80, "p": 40, "k": 40 },
+        "compData": { "water": 4, "soil": "Heavy Loam", "climate": "Humid/Tropical" }
+    },
+    {
+        "id": "108",
+        "name": "Bitter Gourd",
+        "mr_name": "कारले",
+        "Period": "Cultivation Period: 3 months",
+        "mr_period": "लागवड कालावधी: ३ महिने",
+        "description": "Bitter gourd is a high-demand vegetable known for blood purification properties.",
+        "mr_description": "कारले हे आरोग्यासाठी कडू पण फायदेशीर पीक आहे.",
+        "src": "https://images.unsplash.com/photo-1583689464402-b2654911910d?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 20, "max_temp": 38, "min_rain": 500, "max_rain": 1200, "n": 60, "p": 40, "k": 40 },
+        "compData": { "water": 3, "soil": "Sandy/Alluvial", "climate": "Hot" }
+    },
+    {
+        "id": "109",
+        "name": "Coriander",
+        "mr_name": "कोथिंबीर",
+        "Period": "Cultivation Period: 1.5 months",
+        "mr_period": "लागवड कालावधी: १.५ महिने",
+        "description": "Coriander is an essential culinary herb, grown fast for its leaves.",
+        "mr_description": "कोथिंबीर हे दररोज लागणारे कमी कालावधीतील पालेभाजी पीक आहे.",
+        "src": "https://images.unsplash.com/photo-1528796940112-4979b4a98424?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 15, "max_temp": 30, "min_rain": 250, "max_rain": 600, "n": 40, "p": 40, "k": 40 },
+        "compData": { "water": 2, "soil": "Sandy Loam/Clayey", "climate": "Mild/Diverse" }
+    },
+    {
+        "id": "110",
+        "name": "Fenugreek",
+        "mr_name": "मेथी",
+        "Period": "Cultivation Period: 1 month",
+        "mr_period": "लागवड कालावधी: १ महिना",
+        "description": "Fenugreek (Methi) is a popular leafy vegetable, providing iron and fiber.",
+        "mr_description": "मेथी हे अतिशय कमी वेळात येणारे आणि लोहयुक्त पीक आहे.",
+        "src": "https://images.unsplash.com/photo-1528796940112-4979b4a98424?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 10, "max_temp": 32, "min_rain": 200, "max_rain": 500, "n": 30, "p": 30, "k": 30 },
+        "compData": { "water": 2, "soil": "Fertile Sandy", "climate": "Mild" }
+    },
+    {
+        "id": "111",
+        "name": "Curry Leaves",
+        "mr_name": "कढीपत्ता",
+        "Period": "Cultivation Period: Year-round",
+        "mr_period": "लागवड कालावधी: वर्षभर",
+        "description": "Curry leaves are essential for Indian spice tempering.",
+        "mr_description": "कढीपत्ता हे स्वयंपाकात सुवासासाठी वापरले जाणारे झाड आहे.",
+        "src": "https://images.unsplash.com/photo-1616423642371-36ba906753f2?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 20, "max_temp": 38, "min_rain": 600, "max_rain": 1200, "n": 40, "p": 20, "k": 40 },
+        "compData": { "water": 2, "soil": "Well-drained Rich", "climate": "Tropical/Hot" }
+    },
+    {
+        "id": "112",
+        "name": "Mint",
+        "mr_name": "पुदिना",
+        "Period": "Cultivation Period: 1.5 months",
+        "mr_period": "लागवड कालावधी: १.५ महिने",
+        "description": "Mint is a fast-growing herb that requires constant moisture and cool roots.",
+        "mr_description": "पुदिना हे थंड चवीसाठी आणि स्वादासाठी वापरले जाणारे पीक आहे.",
+        "src": "https://images.unsplash.com/photo-1528796940112-4979b4a98424?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 15, "max_temp": 30, "min_rain": 1000, "max_rain": 1800, "n": 60, "p": 40, "k": 40 },
+        "compData": { "water": 4, "soil": "Wet Loamy", "climate": "Shady/Cool" }
+    },
+    {
+        "id": "113",
+        "name": "Lettuce",
+        "mr_name": "लेट्यूस (सॅलड पान)",
+        "Period": "Cultivation Period: 2 months",
+        "mr_period": "लागवड कालावधी: २ महिने",
+        "description": "Lettuce is a high-value leafy vegetable grown in cool seasons or controlled zones.",
+        "mr_description": "लेट्यूस हे सॅलडसाठी वापरले जाणारे आधुनिक काळातील पालेभाजी पीक आहे.",
+        "src": "https://images.unsplash.com/photo-1528796940112-4979b4a98424?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 10, "max_temp": 22, "min_rain": 500, "max_rain": 800, "n": 100, "p": 40, "k": 40 },
+        "compData": { "water": 3, "soil": "Sandy Fertile", "climate": "Cool/Sunny" }
+    },
+    {
+        "id": "114",
+        "name": "Jackfruit",
+        "mr_name": "फणस",
+        "Period": "Cultivation Period: 12 months (Seasonally)",
+        "mr_period": "लागवड कालावधी: १२ महिने",
+        "description": "Jackfruit is a major fruit in the Konkan region of India.",
+        "mr_description": "फणस हे कोकणी संस्कृतीतील एक अविभाज्य फळ आहे.",
+        "src": "https://images.unsplash.com/photo-1596489392289-9e8cbb0cc0b3?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 25, "max_temp": 40, "min_rain": 1500, "max_rain": 3000, "n": 80, "p": 40, "k": 100 },
+        "compData": { "water": 4, "soil": "Deep Silt/Alluvial", "climate": "Hot/Humid" }
+    },
+    {
+        "id": "115",
+        "name": "Kiwi",
+        "mr_name": "किवी",
+        "Period": "Cultivation Period: 3-4 years",
+        "mr_period": "लागवड कालावधी: ३-४ वर्षे",
+        "description": "Kiwi is a high-value fruit requiring cool hill climates and reliable irrigation.",
+        "mr_description": "किवी हे डेंग्यूसारख्या आजारात फायदेशीर ठरणारे थंड हवेतील फळ आहे.",
+        "src": "https://images.unsplash.com/photo-1596541223130-5d31a73fb6c6?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 10, "max_temp": 28, "min_rain": 1000, "max_rain": 1500, "n": 120, "p": 60, "k": 100 },
+        "compData": { "water": 4, "soil": "Rich Acidic Loam", "climate": "High Altitude" }
+    },
+    {
+        "id": "116",
+        "name": "Cherry",
+        "mr_name": "चेरी",
+        "Period": "Cultivation Period: 4 months (Harvest)",
+        "mr_period": "लागवड कालावधी: ४ महिने",
+        "description": "Cherries are premium temperate fruits, mainly grown in the northern hilly belts.",
+        "mr_description": "चेरी हे काश्मीरसारख्या अत्यंत थंड ठिकाणी येणारे आकर्षक फळ आहे.",
+        "src": "https://images.unsplash.com/photo-1527324688101-08d3a984c041?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": -5, "max_temp": 20, "min_rain": 1000, "max_rain": 1600, "n": 60, "p": 40, "k": 80 },
+        "compData": { "water": 4, "soil": "Deep Well-drained", "climate": "Alpine/Cold" }
+    },
+    {
+        "id": "117",
+        "name": "Walnut",
+        "mr_name": "अक्रोड",
+        "Period": "Cultivation Period: 10 years",
+        "mr_period": "लागवड कालावधी: १० वर्षे",
+        "description": "Walnuts are energy-dense brain foods produced in cold environments.",
+        "mr_description": "अक्रोड हे बुद्धिवर्धक आणि आरोग्यासाठी उत्तम असलेले ड्राय फ्रूट आहे.",
+        "src": "https://images.unsplash.com/photo-1585244778423-ca6cca298317?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 0, "max_temp": 25, "min_rain": 800, "max_rain": 1200, "n": 100, "p": 60, "k": 80 },
+        "compData": { "water": 4, "soil": "Loose Sandy Loam", "climate": "Winter" }
+    },
+    {
+        "id": "118",
+        "name": "Saffron",
+        "mr_name": "केशर",
+        "Period": "Cultivation Period: 3 months",
+        "mr_period": "लागवड कालावधी: ३ महिने",
+        "description": "The gold of spices, Saffron is only grown in high-altitude cold belts like Pampore.",
+        "mr_description": "केशर हे जगातील सर्वात महागडे आणि शुद्ध मसाला पीक आहे.",
+        "src": "https://images.unsplash.com/photo-1508817628294-5a453fa0b8fb?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": -10, "max_temp": 22, "min_rain": 400, "max_rain": 600, "n": 80, "p": 60, "k": 60 },
+        "compData": { "water": 2, "soil": "Rich Clayey/Calcareous", "climate": "Freezing" }
+    },
+    {
+        "id": "119",
+        "name": "Ashwagandha",
+        "mr_name": "अश्वगंधा",
+        "Period": "Cultivation Period: 5-6 months",
+        "mr_period": "लागवड कालावधी: ५-६ महिने",
+        "description": "Ashwagandha is a core Ayurvedic herb, booming in commercial demand.",
+        "mr_description": "अश्वगंधा ही आधुनिक काळातील अत्यंत मौल्यवान औषधी वनस्पती आहे.",
+        "src": "https://images.unsplash.com/photo-1596541223130-5d31a73fb6c6?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 20, "max_temp": 38, "min_rain": 600, "max_rain": 1000, "n": 40, "p": 40, "k": 40 },
+        "compData": { "water": 2, "soil": "Sandy Loam/Gravelly", "climate": "Hot/Dry" }
+    },
+    {
+        "id": "120",
+        "name": "Fenugreek Seeds",
+        "mr_name": "मेथी दाणे",
+        "Period": "Cultivation Period: 4 months",
+        "mr_period": "लागवड कालावधी: ४ महिने",
+        "description": "Methi seeds are used globally for culinary and health purposes.",
+        "mr_description": "मेथी दाणे हे स्वयंपाकात आणि औषधात वापरले जाणारे नगदी पीक आहे.",
+        "src": "https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?q=80&w=800&auto=format&fit=crop",
+        "requirements": { "min_temp": 15, "max_temp": 25, "min_rain": 300, "max_rain": 600, "n": 40, "p": 40, "k": 20 },
+        "compData": { "water": 1, "soil": "Any Dry Soil", "climate": "Winter" }
+    }
+];
+

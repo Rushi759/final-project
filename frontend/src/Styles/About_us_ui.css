@@ -1,0 +1,368 @@
+#about_page {
+    background-color: #0a0f0a;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Parallax Hero */
+#about_hero {
+    height: 80vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero_parallax_bg {
+    position: absolute;
+    top: -20%;
+    left: 0;
+    width: 100%;
+    height: 140%;
+    background: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=2000') center/cover;
+    z-index: 1;
+    transition: transform 0.1s ease-out;
+}
+
+#about_hero_overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(10, 15, 10, 0.4), #0a0f0a);
+    z-index: 2;
+}
+
+#about_hero_content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    max-width: 900px;
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.hero_title {
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    letter-spacing: -3px;
+}
+
+.hero_title span {
+    color: var(--primary);
+    background: linear-gradient(to right, #2bb85a, #dbff00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero_subtitle {
+    font-size: 1.5rem;
+    color: rgba(255,255,255,0.7);
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* Impact Stats Bar */
+#impact_stats_bar {
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem 2rem;
+    background: rgba(43, 184, 90, 0.05);
+    border: 1px solid rgba(43, 184, 90, 0.1);
+    border-radius: 40px;
+    margin-bottom: 8rem;
+    backdrop-filter: blur(20px);
+}
+
+.stat_box {
+    text-align: center;
+}
+
+.stat_box h4 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.stat_box p {
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Container */
+.about_container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5% 10rem;
+}
+
+/* Section Header */
+.sur_title {
+    display: block;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 800;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+/* Our Story */
+#about_story {
+    margin-bottom: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 6rem;
+    align-items: center;
+}
+
+.section_header h3 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    letter-spacing: -1px;
+    line-height: 1;
+}
+
+.title_line {
+    width: 60px;
+    height: 4px;
+    background: var(--primary);
+    margin-top: 1.5rem;
+}
+
+.story_content p {
+    font-size: 1.35rem;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 2.5rem;
+}
+
+/* Interactive Timeline */
+#about_timeline {
+    position: relative;
+    padding: 4rem 0;
+    margin-bottom: 10rem;
+}
+
+.timeline_track {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    width: 2px;
+    background: linear-gradient(to bottom, transparent, var(--primary), transparent);
+}
+
+.timeline_item {
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 4rem;
+}
+
+.timeline_dot {
+    position: absolute;
+    left: 11px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background: var(--primary);
+    border-radius: 50%;
+    box-shadow: 0 0 15px var(--primary);
+    z-index: 10;
+}
+
+.timeline_content {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 2.5rem;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.timeline_content:hover {
+    transform: translateX(15px);
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(43, 184, 90, 0.2);
+}
+
+.m_year {
+    color: var(--primary);
+    font-weight: 900;
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.timeline_content h5 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.timeline_content p {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.6;
+}
+
+/* Glassmorphism Pillars */
+#about_pillars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    margin-bottom: 12rem;
+}
+
+.glass_effect {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(40px);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+}
+
+.pillar_card {
+    padding: 4rem 3rem;
+    border-radius: 45px;
+    transition: all 0.5s ease;
+    text-align: center;
+}
+
+.pillar_card:hover {
+    transform: translateY(-15px) scale(1.02);
+    border-color: rgba(43, 184, 90, 0.4);
+    box-shadow: 0 40px 80px rgba(43, 184, 90, 0.1);
+}
+
+.pillar_icon {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    filter: drop-shadow(0 0 10px rgba(255,255,255,0.2));
+}
+
+/* Holographic Team Cards */
+.team_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.holographic_effect {
+    position: relative;
+    --mouse-x: 50%;
+    --mouse-y: 50%;
+    overflow: hidden;
+}
+
+.card_glow_overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at var(--mouse-x) var(--mouse-y), rgba(43, 184, 90, 0.18) 0%, transparent 60%);
+    z-index: 10;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.team_card:hover .card_glow_overlay {
+    opacity: 1;
+}
+
+.team_card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 2.5rem 1.5rem;
+    border-radius: 35px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.team_card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.team_img_wrapper {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+    border: 4px solid rgba(43, 184, 90, 0.2);
+    transition: border-color 0.4s;
+    background: #1a2a1a;
+}
+
+.team_card:hover .team_img_wrapper {
+    border-color: var(--primary);
+}
+
+.team_img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(1);
+    transition: 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.team_card:hover .team_img {
+    filter: grayscale(0);
+    transform: scale(1.15);
+}
+
+.team_social {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    position: relative;
+    z-index: 20;
+}
+
+.team_social a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(43, 184, 90, 0.05);
+    border: 1px solid rgba(43, 184, 90, 0.2);
+    border-radius: 50%;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.2rem;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-decoration: none;
+}
+
+.team_social a:hover {
+    color: white;
+    background: var(--primary);
+    border-color: var(--primary);
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 10px 20px rgba(43, 184, 90, 0.3);
+}
+
+@media (max-width: 1100px) {
+    .team_grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .hero_title { font-size: 3rem; }
+    #impact_stats_bar { flex-direction: column; gap: 3rem; border-radius: 30px; }
+    .stat_box h4 { font-size: 2.5rem; }
+    #about_pillars { grid-template-columns: 1fr; }
+    .team_grid { grid-template-columns: 1fr; }
+}

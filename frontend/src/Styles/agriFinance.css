@@ -1,0 +1,511 @@
+/* Agri-Finance Masterpiece Styles */
+:root {
+    --finance-gold: #f59e0b;
+    --finance-emerald: #94a3b8; /* Shifted to Platinum Silver */
+    --finance-glass: rgba(255, 255, 255, 0.05);
+    --finance-border: rgba(255, 255, 255, 0.12);
+}
+
+.agri-finance-container {
+    min-height: 100vh;
+    background: radial-gradient(circle at top right, rgba(16, 185, 129, 0.05), transparent 400px),
+                radial-gradient(circle at bottom left, rgba(245, 158, 11, 0.03), transparent 400px);
+    color: #e2e8f0;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Holographic Header */
+.finance-hologram-header {
+    text-align: center;
+    padding: 60px 20px 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hologram-title {
+    font-size: 3.5rem;
+    font-weight: 900;
+    background: linear-gradient(135deg, #fff 0%, var(--finance-emerald) 50%, var(--finance-gold) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+    animation: titleGlow 4s ease-in-out infinite;
+}
+
+@keyframes titleGlow {
+    0%, 100% { filter: drop-shadow(0 0 10px rgba(16, 185, 129, 0.2)); }
+    50% { filter: drop-shadow(0 0 25px rgba(16, 185, 129, 0.5)); }
+}
+
+/* 3D Intelligence Tiles */
+.finance-grid-masterpiece {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    padding: 0 40px 60px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.intelligence-cell {
+    background: var(--finance-glass);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--finance-border);
+    border-radius: 24px;
+    padding: 35px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.intelligence-cell:hover {
+    transform: translateY(-10px) rotateX(2deg) rotateY(-2deg);
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4), 
+                0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+.cell-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.cell-header i {
+    font-size: 2rem;
+    color: var(--finance-emerald);
+    filter: drop-shadow(0 0 10px var(--finance-emerald));
+}
+
+.cell-header h3 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin: 0;
+    color: #fff;
+}
+
+/* Unit Toggle Pill */
+.unit-toggle-pill {
+    display: flex;
+    background: rgba(0,0,0,0.3);
+    border: 1px solid var(--finance-border);
+    border-radius: 20px;
+    padding: 2px;
+    margin-left: auto;
+    height: 32px;
+}
+
+.unit-btn {
+    padding: 0 12px;
+    border: none;
+    background: transparent;
+    color: rgba(255,255,255,0.4);
+    font-size: 0.75rem;
+    font-weight: 800;
+    cursor: pointer;
+    border-radius: 18px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.unit-btn.active {
+    background: var(--finance-emerald);
+    color: #fff;
+    box-shadow: 0 0 10px rgba(16, 185, 129, 0.3);
+}
+
+/* Premium Inputs */
+.modern-input-group {
+    margin-bottom: 25px;
+}
+
+.modern-input-group label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.premium-input-wrap {
+    background: rgba(0,0,0,0.2);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    transition: border-color 0.3s ease;
+}
+
+.premium-input-wrap:focus-within {
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+.premium-input-wrap input, 
+.premium-input-wrap select {
+    background: #000; /* Solid background for un-pre-styled browsers */
+    border: none !important;
+    color: #fff;
+    padding: 12px 0;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 700;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.premium-input-wrap select option {
+    background-color: #111827; /* Dark background for the dropdown list */
+    color: #fff;
+    padding: 10px;
+}
+
+/* Category Visualization Chart */
+.category-visual-chart {
+    margin: 20px 0;
+    padding: 20px;
+    background: rgba(0,0,0,0.2);
+    border-radius: 15px;
+    border-left: 4px solid var(--finance-gold);
+}
+
+.tier-bar {
+    height: 8px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 4px;
+    margin: 10px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.tier-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--finance-gold), var(--finance-emerald));
+    transition: width 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Compute Button */
+.compute-btn-hologram {
+    width: 100%;
+    padding: 18px;
+    margin-top: 10px;
+    background: linear-gradient(135deg, var(--finance-emerald) 0%, #065f46 100%);
+    border: none;
+    border-radius: 14px;
+    color: #fff;
+    font-weight: 900;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(16, 185, 129, 0.2);
+    transition: all 0.3s ease;
+}
+
+.compute-btn-hologram:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 35px rgba(16, 185, 129, 0.4);
+    filter: brightness(1.1);
+}
+
+/* Neural Scan Overlay */
+.finance-scan-mask {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.9);
+    backdrop-filter: blur(8px);
+    z-index: 10;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: maskFadeIn 0.3s ease;
+}
+
+.scheme-vault-results {
+    position: relative;
+    z-index: 20; /* Ensure results are above the scan mask */
+    margin-top: 30px;
+}
+
+@keyframes maskFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeInAnim 0.6s ease-out forwards;
+}
+
+@keyframes fadeInAnim {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.scan-ring-finance {
+    width: 100px;
+    height: 100px;
+    border: 3px dashed var(--finance-emerald);
+    border-radius: 50%;
+    animation: rotateFinance 4s linear infinite;
+}
+
+@keyframes rotateFinance {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Result Cards */
+.scheme-vault-results {
+    margin-top: 30px;
+}
+
+.scheme-card-premium {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: background 0.3s ease;
+}
+
+.scheme-card-premium:hover {
+    background: rgba(255,255,255,0.06);
+}
+
+.match-accuracy-dial {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid var(--finance-emerald);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 900;
+    flex-shrink: 0;
+    background: rgba(16, 185, 129, 0.1);
+}
+
+.scheme-info h4 {
+    margin: 0 0 5px 0;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.scheme-info p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.5);
+}
+
+/* Responsive Fixes */
+/* Global Spinner Removal */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Typography Refinement */
+.premium-input-wrap input {
+    letter-spacing: 0.5px;
+}
+
+/* Elite Language Switcher */
+.elite-lang-switcher {
+    z-index: 1000;
+}
+
+.marathi-mode {
+    font-family: 'Outfit', 'Inter', sans-serif !important;
+}
+
+/* Subsidy Passport - The Final Artifact */
+.passport-card-premium {
+    position: relative;
+    overflow: hidden;
+    animation: passportPop 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes passportPop {
+    from { opacity: 0; transform: scale(0.9) translateY(40px); }
+    to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+/* Regional Dial Adjustments */
+.match-accuracy-dial {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%) !important;
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.3) !important;
+    border-color: #f59e0b !important;
+}
+
+/* Mobile Responsiveness for Elite Features */
+@media (max-width: 768px) {
+    .elite-lang-switcher, .back-nav-container {
+        position: static !important;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .finance-hologram-header {
+        padding: 40px 20px;
+    }
+}
+
+/* Documents Blueprint: Intellectual Requirement Analytics */
+.scheme-card-premium.expanded {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--finance-gold) !important;
+    box-shadow: 0 10px 30px rgba(245, 158, 11, 0.15);
+}
+
+.documents-blueprint {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    border-left: 3px solid var(--finance-gold);
+    animation: slideDownAgri 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideDownAgri {
+    from { opacity: 0; transform: translateY(-10px); max-height: 0; overflow: hidden; }
+    to { opacity: 1; transform: translateY(0); max-height: 500px; }
+}
+
+.documents-blueprint ul {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 0 0;
+}
+
+.documents-blueprint li {
+    font-size: 0.85rem;
+    color: #e2e8f0;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    opacity: 0.8;
+}
+
+.documents-blueprint li span {
+    color: var(--finance-gold);
+    font-weight: 900;
+}
+
+.documents-blueprint h5 {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    color: var(--finance-gold);
+    text-transform: uppercase;
+}
+
+/* Passport Overlay Box System */
+.prediction-scan-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.85);
+    backdrop-filter: blur(12px);
+    animation: fadeInOverlay 0.4s ease;
+}
+
+@keyframes fadeInOverlay {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* 📠 SUBSIDY PASSPORT: OFFICIAL PRINT ARCHITECTURE */
+@media print {
+    /* Hide all UI elements except the Passport Card */
+    body * {
+        visibility: hidden;
+    }
+    
+    .prediction-scan-overlay, 
+    .prediction-scan-overlay *,
+    .passport-card-premium, 
+    .passport-card-premium * {
+        visibility: visible;
+    }
+
+    .prediction-scan-overlay {
+        position: absolute;
+        left: 0; top: 0;
+        background: white !important;
+        padding: 0;
+        width: 100%;
+    }
+
+    .passport-card-premium {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%) !important;
+        background: white !important;
+        color: black !important;
+        border: 2px solid #000 !important;
+        box-shadow: none !important;
+        width: 100% !important;
+        max-width: 650px !important;
+        padding: 40px !important;
+        border-radius: 0 !important; /* Professional flat edges for print */
+    }
+
+    .passport-card-premium h2 {
+        color: black !important;
+        text-decoration: underline;
+    }
+
+    .passport-card-premium p, 
+    .passport-card-premium span {
+        color: black !important;
+    }
+
+    .passport-card-premium .compute-btn-hologram {
+        display: none !important; /* Hide print/close buttons on actual print */
+    }
+
+    /* Add "Official Document" stamp only in print */
+    .passport-card-premium::after {
+        content: 'OFFICIAL AGROGURU CERTIFIED';
+        position: absolute;
+        top: 10%;
+        right: 0;
+        font-size: 40px;
+        color: rgba(0,0,0,0.05);
+        transform: rotate(-45deg);
+        z-index: -1;
+        font-weight: 950;
+    }
+}
+

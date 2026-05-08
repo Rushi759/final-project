@@ -1,0 +1,242 @@
+#nursery_page {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 2rem;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+#nursery_page::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+}
+
+.back-link {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    z-index: 100;
+    color: white !important;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.back-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.back-icon {
+    font-size: 1.2rem;
+}
+
+#nur_back {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    max-width: 650px; /* Slightly wider than market for timing fields */
+}
+
+#nur_form_cnt {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(35px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-xl);
+    padding: 3rem;
+    box-shadow: var(--shadow-xl);
+}
+
+#nur_form_back h2 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    letter-spacing: -1.5px;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+#nur_form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.full-width { grid-column: span 2; }
+
+.attri {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.attri label {
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-left: 5px;
+}
+
+#nur_form input {
+    width: 100%;
+    height: 3.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: var(--radius-md);
+    padding: 0 1.25rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+#nur_form input:focus {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--primary-light);
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(52, 211, 153, 0.15);
+}
+
+#nur_form input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* Upload Zone Preview Styling */
+.upload-zone {
+    grid-column: span 2;
+    width: 100%;
+    height: 140px;
+    border: 2px dashed rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-md);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.upload-zone:hover {
+    border-color: var(--primary-light);
+    background: rgba(52, 211, 153, 0.05);
+}
+
+.upload-zone img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+#nur_img_in {
+    opacity: 0;
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.err {
+    color: #f87171;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top: 4px;
+    background: transparent !important;
+}
+
+/* Actions */
+#lfbtn {
+    grid-column: span 2;
+    margin-top: 1.5rem;
+}
+
+#lfbtn button {
+    width: 100%;
+    height: 4rem;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: white;
+    border: none;
+    border-radius: var(--radius-md);
+    font-size: 1.1rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 10px 30px rgba(5, 150, 105, 0.3);
+}
+
+#lfbtn button:hover:not(:disabled) {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(5, 150, 105, 0.4);
+    filter: brightness(1.1);
+}
+
+#lfbtn button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Geolocation Status Badge */
+.geo-status {
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    background: rgba(5, 150, 105, 0.25);
+    border: 1px solid var(--primary-light);
+    color: var(--primary-light);
+    padding: 6px 15px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    backdrop-filter: blur(10px);
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background: var(--primary-light);
+    border-radius: 50%;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(0.9); opacity: 1; }
+    50% { transform: scale(1.2); opacity: 0.7; }
+    100% { transform: scale(0.9); opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    #nur_form_cnt { padding: 2rem; }
+    #nur_form { grid-template-columns: 1fr; }
+    .attri { grid-column: span 2; }
+}
